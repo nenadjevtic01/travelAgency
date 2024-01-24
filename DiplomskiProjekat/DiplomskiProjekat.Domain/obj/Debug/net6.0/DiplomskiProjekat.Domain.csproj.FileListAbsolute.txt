@@ -1,0 +1,11 @@
+E:\Skola\DiplomskiProjekat\DiplomskiProjekat\DiplomskiProjekat.Domain\bin\Debug\net6.0\DiplomskiProjekat.Domain.deps.json
+E:\Skola\DiplomskiProjekat\DiplomskiProjekat\DiplomskiProjekat.Domain\bin\Debug\net6.0\DiplomskiProjekat.Domain.dll
+E:\Skola\DiplomskiProjekat\DiplomskiProjekat\DiplomskiProjekat.Domain\bin\Debug\net6.0\DiplomskiProjekat.Domain.pdb
+E:\Skola\DiplomskiProjekat\DiplomskiProjekat\DiplomskiProjekat.Domain\obj\Debug\net6.0\DiplomskiProjekat.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Skola\DiplomskiProjekat\DiplomskiProjekat\DiplomskiProjekat.Domain\obj\Debug\net6.0\DiplomskiProjekat.Domain.AssemblyInfoInputs.cache
+E:\Skola\DiplomskiProjekat\DiplomskiProjekat\DiplomskiProjekat.Domain\obj\Debug\net6.0\DiplomskiProjekat.Domain.AssemblyInfo.cs
+E:\Skola\DiplomskiProjekat\DiplomskiProjekat\DiplomskiProjekat.Domain\obj\Debug\net6.0\DiplomskiProjekat.Domain.csproj.CoreCompileInputs.cache
+E:\Skola\DiplomskiProjekat\DiplomskiProjekat\DiplomskiProjekat.Domain\obj\Debug\net6.0\DiplomskiProjekat.Domain.dll
+E:\Skola\DiplomskiProjekat\DiplomskiProjekat\DiplomskiProjekat.Domain\obj\Debug\net6.0\refint\DiplomskiProjekat.Domain.dll
+E:\Skola\DiplomskiProjekat\DiplomskiProjekat\DiplomskiProjekat.Domain\obj\Debug\net6.0\DiplomskiProjekat.Domain.pdb
+E:\Skola\DiplomskiProjekat\DiplomskiProjekat\DiplomskiProjekat.Domain\obj\Debug\net6.0\ref\DiplomskiProjekat.Domain.dll
