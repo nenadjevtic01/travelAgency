@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1Elv1lPFGZmJgNLm7sHWhAoQltxp3W9+tUiNY5y/clzkhFlOhLra/iZz2nxL5+aOxP4d1tjlCaS9JO42rExFVA==",
+  "dgSpecHash": "C9XKHeachH6YOyoutoFpu3cX91Ahx4OSvZXPpTJz7t37z9SeiD1SWolLo9iA1F8d5rHTDc4vb0vet/tcZqS3ig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nenad\\Desktop\\DiplomskiProjekat\\DiplomskiProjekat.Application\\DiplomskiProjekat.Application.csproj",
+  "projectFilePath": "E:\\Skola\\Diplomski Projekat\\DiplomskiProjekat\\DiplomskiProjekat.Application\\DiplomskiProjekat.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nenad\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\Nenad\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

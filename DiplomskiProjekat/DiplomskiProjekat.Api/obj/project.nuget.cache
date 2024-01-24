@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G2nrEs0ZRevMwcwkZGTL0V+NoyzD53gwEj1YJzjQ+zSDzYH5VDZH4oxM5nqc49yyJ0suzEEZwNtuBiS45HZrLw==",
+  "dgSpecHash": "pQzEhbRRccAUM47sFsl1ZJuRksUNfO447y0vtkJDEP1alxMRQLggcUdydMcHyLgDCGlnNHHNyZDWBKsbbfCGAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nenad\\Desktop\\DiplomskiProjekat\\DiplomskiProjekat.Api\\DiplomskiProjekat.Api.csproj",
+  "projectFilePath": "E:\\Skola\\Diplomski Projekat\\DiplomskiProjekat\\DiplomskiProjekat.Api\\DiplomskiProjekat.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nenad\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Nenad\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",

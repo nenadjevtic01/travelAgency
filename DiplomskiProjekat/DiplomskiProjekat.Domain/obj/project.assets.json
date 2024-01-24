@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nenad\\Desktop\\DiplomskiProjekat\\DiplomskiProjekat.Domain\\DiplomskiProjekat.Domain.csproj",
+      "projectUniqueName": "E:\\Skola\\Diplomski Projekat\\DiplomskiProjekat\\DiplomskiProjekat.Domain\\DiplomskiProjekat.Domain.csproj",
       "projectName": "DiplomskiProjekat.Domain",
-      "projectPath": "C:\\Users\\Nenad\\Desktop\\DiplomskiProjekat\\DiplomskiProjekat.Domain\\DiplomskiProjekat.Domain.csproj",
+      "projectPath": "E:\\Skola\\Diplomski Projekat\\DiplomskiProjekat\\DiplomskiProjekat.Domain\\DiplomskiProjekat.Domain.csproj",
       "packagesPath": "C:\\Users\\Nenad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nenad\\Desktop\\DiplomskiProjekat\\DiplomskiProjekat.Domain\\obj\\",
+      "outputPath": "E:\\Skola\\Diplomski Projekat\\DiplomskiProjekat\\DiplomskiProjekat.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nenad\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -7,11 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DiplomskiProjekat.Application\DiplomskiProjekat.Application.csproj" />
+    <Compile Remove="UseCases\Queries\**" />
+    <EmbeddedResource Remove="UseCases\Queries\**" />
+    <None Remove="UseCases\Queries\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="UseCases\Queries\" />
+    <ProjectReference Include="..\DiplomskiProjekat.Application\DiplomskiProjekat.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>

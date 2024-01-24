@@ -15,3 +15,20 @@ E:\Skola\DiplomskiProjekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\obj\De
 E:\Skola\DiplomskiProjekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\obj\Debug\net6.0\DiplomskiProjekat.DataAccess.pdb
 E:\Skola\DiplomskiProjekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\obj\Debug\net6.0\DiplomskiProjekat.DataAccess.genruntimeconfig.cache
 E:\Skola\DiplomskiProjekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\obj\Debug\net6.0\ref\DiplomskiProjekat.DataAccess.dll
+E:\Skola\Diplomski Projekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\bin\Debug\net6.0\DiplomskiProjekat.DataAccess.deps.json
+E:\Skola\Diplomski Projekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\bin\Debug\net6.0\DiplomskiProjekat.DataAccess.runtimeconfig.json
+E:\Skola\Diplomski Projekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\bin\Debug\net6.0\DiplomskiProjekat.DataAccess.dll
+E:\Skola\Diplomski Projekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\bin\Debug\net6.0\DiplomskiProjekat.DataAccess.pdb
+E:\Skola\Diplomski Projekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\bin\Debug\net6.0\DiplomskiProjekat.Domain.dll
+E:\Skola\Diplomski Projekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\bin\Debug\net6.0\DiplomskiProjekat.Domain.pdb
+E:\Skola\Diplomski Projekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\obj\Debug\net6.0\DiplomskiProjekat.DataAccess.csproj.AssemblyReference.cache
+E:\Skola\Diplomski Projekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\obj\Debug\net6.0\DiplomskiProjekat.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\Skola\Diplomski Projekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\obj\Debug\net6.0\DiplomskiProjekat.DataAccess.AssemblyInfoInputs.cache
+E:\Skola\Diplomski Projekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\obj\Debug\net6.0\DiplomskiProjekat.DataAccess.AssemblyInfo.cs
+E:\Skola\Diplomski Projekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\obj\Debug\net6.0\DiplomskiProjekat.DataAccess.csproj.CoreCompileInputs.cache
+E:\Skola\Diplomski Projekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\obj\Debug\net6.0\DiplomskiProjekat.DataAccess.csproj.CopyComplete
+E:\Skola\Diplomski Projekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\obj\Debug\net6.0\DiplomskiProjekat.DataAccess.dll
+E:\Skola\Diplomski Projekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\obj\Debug\net6.0\refint\DiplomskiProjekat.DataAccess.dll
+E:\Skola\Diplomski Projekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\obj\Debug\net6.0\DiplomskiProjekat.DataAccess.pdb
+E:\Skola\Diplomski Projekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\obj\Debug\net6.0\DiplomskiProjekat.DataAccess.genruntimeconfig.cache
+E:\Skola\Diplomski Projekat\DiplomskiProjekat\DiplomskiProjekat.DataAccess\obj\Debug\net6.0\ref\DiplomskiProjekat.DataAccess.dll

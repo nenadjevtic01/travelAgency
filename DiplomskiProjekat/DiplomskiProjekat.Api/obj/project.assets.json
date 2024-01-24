@@ -7615,11 +7615,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nenad\\Desktop\\DiplomskiProjekat\\DiplomskiProjekat.Api\\DiplomskiProjekat.Api.csproj",
+      "projectUniqueName": "E:\\Skola\\Diplomski Projekat\\DiplomskiProjekat\\DiplomskiProjekat.Api\\DiplomskiProjekat.Api.csproj",
       "projectName": "DiplomskiProjekat.Api",
-      "projectPath": "C:\\Users\\Nenad\\Desktop\\DiplomskiProjekat\\DiplomskiProjekat.Api\\DiplomskiProjekat.Api.csproj",
+      "projectPath": "E:\\Skola\\Diplomski Projekat\\DiplomskiProjekat\\DiplomskiProjekat.Api\\DiplomskiProjekat.Api.csproj",
       "packagesPath": "C:\\Users\\Nenad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nenad\\Desktop\\DiplomskiProjekat\\DiplomskiProjekat.Api\\obj\\",
+      "outputPath": "E:\\Skola\\Diplomski Projekat\\DiplomskiProjekat\\DiplomskiProjekat.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nenad\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7636,8 +7636,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Nenad\\Desktop\\DiplomskiProjekat\\DiplomskiProjekat.Implementation\\DiplomskiProjekat.Implementation.csproj": {
-              "projectPath": "C:\\Users\\Nenad\\Desktop\\DiplomskiProjekat\\DiplomskiProjekat.Implementation\\DiplomskiProjekat.Implementation.csproj"
+            "E:\\Skola\\Diplomski Projekat\\DiplomskiProjekat\\DiplomskiProjekat.Implementation\\DiplomskiProjekat.Implementation.csproj": {
+              "projectPath": "E:\\Skola\\Diplomski Projekat\\DiplomskiProjekat\\DiplomskiProjekat.Implementation\\DiplomskiProjekat.Implementation.csproj"
             }
           }
         }

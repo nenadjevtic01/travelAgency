@@ -1,6 +1,11 @@
 using DiplomskiProjekat.Api.Core;
 using DiplomskiProjekat.Api.Extensions;
+using DiplomskiProjekat.Application.Loggers;
+using DiplomskiProjekat.Application.UseCases;
+using DiplomskiProjekat.Application.UseCases.Commands;
 using DiplomskiProjekat.Implementation;
+using DiplomskiProjekat.Implementation.Loggers;
+using DiplomskiProjekat.Implementation.UseCases.Commands;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +19,12 @@ builder.Services.AddDiplomskiProjekatContext();
 builder.Services.AddUseCases();
 builder.Services.AddValidators();
 
+
+builder.Services.AddTransient<IUseCaseLogger, UseCaseLogger>();
+builder.Services.AddTransient<IExceptionLogger,ConsoleLogger>();
+
 builder.Services.AddTransient<UseCaseHandler>();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
