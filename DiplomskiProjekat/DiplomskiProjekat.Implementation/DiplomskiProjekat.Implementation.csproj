@@ -7,17 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="UseCases\Queries\**" />
-    <EmbeddedResource Remove="UseCases\Queries\**" />
-    <None Remove="UseCases\Queries\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\DiplomskiProjekat.Application\DiplomskiProjekat.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UseCases\Queries\" />
   </ItemGroup>
 
 </Project>

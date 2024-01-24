@@ -543,6 +543,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Cuba/Havana/Havana03.jpg",
                             Alt="Havana image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Havana has a tropical savanna climate (Aw) that closely borders on a tropical rainforest climate (Af) and a tropical monsoon climate (Am). Average temperatures range from 22 °C (72 °F) in January and February to 28 °C (82 °F) in August. Rainfall is heaviest in June and October and lightest from December through April."
                     }
                 },
                 //Cuba -> Varadero
@@ -569,6 +573,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Cuba/Varadero/Varadero03.jpg",
                             Alt="Varadero image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="The climate in Varadero is tropical, for it is at sea level at the tip of the island. Weather may change due to many factors such as exposure to hurricanes, windy tropical storms and by the cooling effect of the trade winds. It is surrounded by enormous bodies of water that can cool air flowing from North America. The yearly mean is 25˚ Celsius (77 ˚F). Summer mean is 27˚Celsius (80.6 ˚F), while winter mean is 21˚C (69.8 ˚F). Humidity is 81% and the average yearly rainfall is roughly 1,400 millimeters (55 inches). June 1 is the beginning of hurricane season; this normally ends on November 15."
                     }
                 },
                 //Cuba -> Trinidad
@@ -595,6 +603,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Cuba/Trinidad/Trinidad03.jpg",
                             Alt="Trinidad image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Temperatures are pleasant through the whole year. Average temperatures range from 26°C (january) to 31°C (june). The rainiest months are: august, may and june. Best time to visit Trinidad is: january, february, march, april and december."
                     }
                 },
                 //Dominican Republic -> Punta Cana
@@ -621,6 +633,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="DominicanRepublic/PuntaCana/PuntaCana03.jpg",
                             Alt="Punta Cana image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Punta Cana features a tropical wet and dry climate under the Köppen climate classification. The weather is fairly consistent all year, with an average temperature of 26 °C (79 °F). The hot and humid season lasts from May to October, and during the day temperatures might reach 35 °C (95 °F). From November to March, temperatures during the evening are around 20 °C (68 °F)."
                     }
                 },
                 //Egypt -> Cairo
@@ -647,6 +663,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Egypt/Cairo/Cairo02.jpg",
                             Alt="Cairo image 2"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="In Cairo, the summers are long, hot, humid, arid, and clear and the winters are cool, dry, and mostly clear. Over the course of the year, the temperature typically varies from 10°C to 35°C and is rarely below 8°C or above 39°C. The best times of year to visit Cairo for hot-weather activities are from mid May to mid July and from mid August to late October."
                     }
                 },
                 //Dominican Republic -> Santo Domingo
@@ -673,6 +693,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="DominicanRepublic/SantoDomingo/SantoDomingo03.jpg",
                             Alt="Santo Domingo image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Santo Domingo experiences a tropical climate with high temperatures year-round. The average annual temperature ranges from 72°F to 88°F (22°C to 31°C). The city sees a distinct wet season from May to October, with the possibility of hurricanes."
                     }
                 },
                 //Dominican Republic -> Saona Island
@@ -699,6 +723,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="DominicanRepublic/SaonaIsland/SaonaIsland03.jpg",
                             Alt="Saona Island image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Saona Island shares the tropical climate of the Dominican Republic. Visitors can expect warm temperatures throughout the year, with an average annual temperature range of 77°F to 88°F (25°C to 31°C). The dry season is the ideal time to enjoy the pristine beaches and outdoor activities."
                     }
                 },
                 //Egypt -> Luxor
@@ -725,6 +753,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Egypt/Luxor/Luxor03.jpg",
                             Alt="Luxor image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Luxor, located in the desert, has an arid climate. Summers are extremely hot, with temperatures exceeding 104°F (40°C), while winters are mild, ranging from 41°F to 73°F (5°C to 23°C). Rainfall is scarce."
                     }
                 },
                 //Egypt -> Sharm El Sheikh
@@ -751,6 +783,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Egypt/SharmElSheikh/SharmElSheikh03.jpg",
                             Alt="Sharm El Sheikh image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Sharm El Sheikh has a desert climate characterized by high temperatures and low humidity. Summers are hot, with temperatures often exceeding 104°F (40°C), while winters are mild, ranging from 59°F to 77°F (15°C to 25°C). Rainfall is minimal. The Red Sea provides a cooling effect, making it a popular year-round destination for water activities."
                     }
                 },
                 //France -> Paris
@@ -777,6 +813,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="France/Paris/Paris03.jpg",
                             Alt="Paris image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="The climate in Paris is oceanic, with warm summers and cool winters. Summers (July, around 25°C) are pleasant, and winters (January, around 5°C) are chilly."
                     }
                 },
                 //France -> Nice
@@ -803,6 +843,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="France/Nice/Nice03.jpg",
                             Alt="Nice image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Nice experiences a Mediterranean climate with hot, dry summers (July, around 30°C) and mild, wet winters (January, around 10°C)."
                     }
                 },
                 //France -> Avignon
@@ -829,6 +873,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="France/Avignon/Avignon03.jpg",
                             Alt="Avignon image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Avignon also has a Mediterranean climate, characterized by hot summers (July, around 30°C) and mild winters (January, around 5°C)."
                     }
                 },
                 //Turkey -> Istanbul
@@ -855,6 +903,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Turkey/Istanbul/Istanbul03.jpg",
                             Alt="Istanbul image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Istanbul has a humid subtropical climate with hot summers (July, around 30°C) and cool, wet winters (January, around 5°C)."
                     }
                 },
                 //Turkey -> Cappadocia
@@ -881,6 +933,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Turkey/Cappadocia/Cappadocia03.jpg",
                             Alt="Cappadocia image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Cappadocia has a continental climate with hot summers (July, around 30°C) and cold winters (January, around 0°C)."
                     }
                 },
                 //Turkey -> Antalya
@@ -907,6 +963,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Turkey/Antalya/Antalya03.jpg",
                             Alt="Antalya image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Antalya experiences a Mediterranean climate with hot, dry summers (July, around 35°C) and mild, wet winters (January, around 10°C)."
                     }
                 },
                 //Brazil -> Rio De Janeiro
@@ -933,6 +993,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Brazil/RioDeJaneiro/RioDeJaneiro03.jpg",
                             Alt="Rio De Janeiro image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Rio has a tropical climate with hot, humid summers (January, around 30°C) and mild, dry winters (July, around 20°C)."
                     }
                 },
                 //Brazil -> Florianopolis
@@ -959,6 +1023,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Brazil/Florianopolis/Florianopolis03.jpg",
                             Alt="Florianopolis image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Subtropical climate, characterized by warm summers (26°C/79°F) and mild winters (18°C/64°F), occasionally accompanied by rainfall."
                     }
                 },
                 //Brazil -> Salvador
@@ -985,6 +1053,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Brazil/Salvador/Salvador03.jpg",
                             Alt="Salvador image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Salvador has a tropical climate with a wet season from April to July and a dry season from October to March. Temperatures average between 23 to 30°C (73 to 86°F) year-round."
                     }
                 },
                 //Greece -> Athens
@@ -1011,6 +1083,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Greece/Athens/Athens03.jpg",
                             Alt="Athens image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Athens has a Mediterranean climate with hot, dry summers (July, around 33°C) and mild, wet winters (January, around 10°C)."
                     }
                 },
                 //Greece -> Santorini
@@ -1037,6 +1113,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Greece/Santorini/Santorini03.jpg",
                             Alt="Santorini image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Santorini also has a Mediterranean climate, with hot, dry summers (July, around 29°C) and mild, rainy winters (January, around 12°C)."
                     }
                 },
                 //Greece -> Crete
@@ -1063,6 +1143,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Greece/Crete/Crete03.jpg",
                             Alt="Crete image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="A captivating island with a Mediterranean climate. Hot, dry summers (June-September, 25-35°C) and mild, wet winters (December-February, 8-16°C). "
                     }
                 },
                 //Mexico -> Mexico City
@@ -1089,6 +1173,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Mexico/MexicoCity/MexicoCity03.jpg",
                             Alt="Mexico City image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Mexico City has a subtropical highland climate with mild, dry winters (January, around 15°C) and warmer, rainy summers (July, around 20°C)."
                     }
                 },
                 //Mexico -> Tulum
@@ -1115,6 +1203,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Mexico/Tulum/Tulum03.jpg",
                             Alt="Tulum image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Tulum experiences a tropical climate with warm temperatures throughout the year. Summers are hot and humid, with temperatures around 28°C."
                     }
                 },
                 //Mexico -> Cancun
@@ -1141,6 +1233,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Mexico/Cancun/Cancun03.jpg",
                             Alt="Cancun image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Cancun has a tropical climate with hot summers (July, around 32°C) and warm winters (January, around 23°C)."
                     }
                 },
                 //Russia -> Saint Petersburg
@@ -1149,7 +1245,12 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationName="Saint Petersburg",
                     DestinationDescription="A cultural hub with the State Hermitage Museum, Winter Palace, and the grandeur of the Peter and Paul Fortress.",
                     Country=country[8],
-                    IsActive=true
+                    IsActive=true,
+                    Images=new List<DestinationImage>{}, // 0
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Saint Petersburg has a humid continental climate with cool summers (July, around 18°C) and cold winters (January, around -6°C)."
+                    }
                 },
                 //Russia -> Moscow
                 new Destination
@@ -1175,6 +1276,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Russia/Moscow/Moscow03.jpg",
                             Alt="Moscow image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Moscow also has a humid continental climate with warm summers (July, around 19°C) and cold winters (January, around -9°C)."
                     }
                 },
                 //Russia -> Lake Baikal
@@ -1201,6 +1306,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Russia/Moscow/LakeBaikal03.jpg",
                             Alt="Lake Baikal image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="The climate around Lake Baikal is characterized by cold winters (January, around -19°C) and cool summers (July, around 12°C)."
                     }
                 },
                 //India -> New Delhi
@@ -1227,6 +1336,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="India/NewDelhi/NewDelhi03.jpg",
                             Alt="New Delhi image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="New Delhi has a hot semi-arid climate with extremely hot summers (May, around 38°C) and cool winters (January, around 12°C)."
                     }
                 },
                 //India -> Agra
@@ -1253,6 +1366,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="India/Agra/Agra03.jpg",
                             Alt="Agra image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Agra experiences a hot semi-arid climate with scorching summers, where temperatures can soar above 40°C (104°F). Winters are cool and foggy, with temperatures ranging from 8°C to 14°C (46°F to 57°F)."
                     }
                 },
                 //India -> Varanasi
@@ -1279,6 +1396,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="India/Varanasi/Varanasi03.jpg",
                             Alt="Varanasi image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Varanasi has a humid subtropical climate with hot summers (May, around 38°C) and cool winters (January, around 12°C)."
                     }
                 },
                 //Peru -> Lima
@@ -1305,6 +1426,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Peru/Lima/Lima03.jpg",
                             Alt="Lima image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Lima has a subtropical desert climate with warm temperatures throughout the year. Summers (February, around 27°C) are hot and dry."
                     }
                 },
                 //Peru -> Machu Picchu
@@ -1331,6 +1456,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Peru/MachuPicchu/MachuPicchu03.jpg",
                             Alt="Machu Picchu image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="The climate around Machu Picchu is tropical mountainous, with warm days (November, around 22°C) and cooler nights."
                     }
                 },
                 //Peru -> Cusco
@@ -1357,6 +1486,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Peru/Cusco/Cusco03.jpg",
                             Alt="Cusco image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Highland climate, dry season (April-October), clear skies, daytime temperatures 15-20°C (59-68°F); wet season (November-March), occasional showers, daytime temperatures 12-18°C (54-64°F)."
                     }
                 },
                 //South Korea -> Seoul
@@ -1383,6 +1516,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="SouthKorea/Seoul/Seoul03.jpg",
                             Alt="Seoul image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Seoul has a humid continental climate with hot, humid summers (August, around 27°C) and cold, dry winters (January, around -6°C)."
                     }
                 },
                 //South Korea -> Jeju Island
@@ -1409,6 +1546,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="SouthKorea/JejuIsland/JejuIsland03.jpg",
                             Alt="Jeju Island image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Jeju Island has a humid subtropical climate with warm temperatures throughout the year. Summers (August, around 29°C) are humid."
                     }
                 },
                 //South Korea -> Busan
@@ -1435,6 +1576,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="SouthKorea/Busan/Busan03.jpg",
                             Alt="Busan image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Busan experiences a humid subtropical climate with hot, humid summers (August, around 28°C) and mild winters (January, around 3°C)."
                     }
                 },
                 //Morocco -> Marrakech
@@ -1461,6 +1606,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Morocco/Marrakech/Marrakech03.jpg",
                             Alt="Marrakech image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Marrakech has a hot semi-arid climate with extremely hot summers (July, around 38°C) and mild winters (January, around 12°C)."
                     }
                 },
                 //Morocco -> Fes
@@ -1487,6 +1636,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Morocco/Fes/Fes03.jpg",
                             Alt="Fes image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Fes experiences a Mediterranean climate with hot, dry summers (July, around 35°C) and mild, wet winters (January, around 10°C)."
                     }
                 },
                 //Morocco -> Casablanca
@@ -1495,7 +1648,12 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationName="Casablanca",
                     DestinationDescription="Casablanca, Morocco's largest city, seamlessly blends modernity with tradition. Explore the iconic Hassan II Mosque, wander through the bustling medina, and experience the vibrant cultural tapestry of this coastal metropolis.",
                     Country=country[12],
-                    IsActive=true
+                    IsActive=true,
+                    Images=new List<DestinationImage>{}, //0
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Casablanca enjoys a Mediterranean climate, with hot summers (20°C to 26°C / 68°F to 79°F) and mild winters (8°C to 17°C / 46°F to 63°F). Refreshing sea breezes contribute to a pleasant atmosphere year-round."
+                    }
                 },
                 //Argentina -> Buenos Aires
                 new Destination
@@ -1521,6 +1679,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Argentina/BuenosAires/BuenosAires03.jpg",
                             Alt="Buenos Aires image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Temperate climate with hot summers (December to February) and mild winters (June to August). Summer averages around 24-33°C (75-91°F), while winter averages around 7-18°C (45-64°F)."
                     }
                 },
                 //Argentina -> Mendoza
@@ -1529,7 +1691,12 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationName="Mendoza",
                     DestinationDescription="Mendoza, nestled in the foothills of the Andes, is Argentina's wine country par excellence. Famous for its Malbec wines, the region offers picturesque vineyards, stunning mountain landscapes, and outdoor activities.",
                     Country=country[13],
-                    IsActive=true
+                    IsActive=true,
+                    Images=new List<DestinationImage>{}, //0
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Mendoza features a desert climate with hot summers and cool winters. Summer temperatures can reach around 32°C (90°F), while winters see daytime temperatures ranging from 14°C to 19°C (57°F to 66°F), making it an ideal year-round destination."
+                    }
                 },
                 //Argentina -> Iguazu Falls
                 new Destination
@@ -1555,6 +1722,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Argentina/IguazuFalls/IguazuFalls03.jpg",
                             Alt="Iguazu Falls image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Subtropical climate with high humidity. Rainfall is evenly distributed throughout the year. Around 18-32°C (64-90°F)."
                     }
                 },
                 //Tanzania -> Kilimanjaro
@@ -1581,6 +1752,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Tanzania/Kilimanjaro/Kilimanjaro03.jpg",
                             Alt="Kilimanjaro image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Varied due to different elevations. Lower slopes are tropical, middle zones are temperate, and the summit is icy and cold. Range from 20°C (68°F) at the base to sub-zero temperatures at the summit."
                     }
                 },
                 //Tanzania -> Zanzibar
@@ -1607,6 +1782,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Tanzania/Zanzibar/Zanzibar03.jpg",
                             Alt="Zanzibar image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Tropical with a hot season (December to March) and a cooler season (June to October). Around 26-32°C (79-90°F) year-round."
                     }
                 },
                 //Tanzania -> Serengeti National Park
@@ -1633,6 +1812,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Tanzania/SerengetiNationalPark/SerengetiNationalPark03.jpg",
                             Alt="Serengeti National Park image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Warm and dry (June to October, peak safari season) with a wet season (November to May). Average temperature is 20-30°C (68-86°F) during the day."
                     }
                 },
                 //Australia -> Sydney
@@ -1659,6 +1842,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Australia/Sydney/Sydney03.jpg",
                             Alt="Sydney image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Temperate climate with warm summers (December to February) and mild winters (June to August). Summer averages around 18-26°C (64-79°F), and winter averages around 8-16°C (46-61°F)."
                     }
                 },
                 //Australia -> Melbourne
@@ -1685,6 +1872,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Australia/Melbourne/Melbourne03.jpg",
                             Alt="Melbourne image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Temperate climate with cool winters (June to August) and warm summers (December to February). Summer averages around 14-25°C (57-77°F), and winter averages around 6-14°C (43-57°F)."
                     }
                 },
                 //Australia -> Tasmania
@@ -1693,7 +1884,12 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationName="Tasmania",
                     DestinationDescription="Tasmania, an island state, is a heaven for nature lovers. With pristine wilderness, including the iconic Cradle Mountain, and rugged coastlines, it offers outdoor adventures.",
                     Country=country[15],
-                    IsActive=true
+                    IsActive=true,
+                    Images=new List<DestinationImage>{}, //0
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Temperate maritime climate with cool summers and cold winters. Summer averages around 12-21°C (54-70°F), and winter averages around 3-11°C (37-52°F)."
+                    }
                 },
                 //Antarctica -> Antarctica
                 new Destination
@@ -1719,6 +1915,10 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             Src="Antarctica/Antarctica/Antarctica03.jpg",
                             Alt="Antarctica image 3"
                         },
+                    },
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Extremely cold with average temperatures ranging from -10°C to -60°C (14°F to -76°F). Strong winds are prevalent, and precipitation is low, making Antarctica the driest continent."
                     }
                 },
                 //Spain -> Barcelona
@@ -1727,7 +1927,12 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationName="Barcelona",
                     DestinationDescription="A dynamic city with impressive architecture by Antoni Gaudí, beaches, and a rich cultural scene.",
                     Country=country[17],
-                    IsActive=true
+                    IsActive=true,
+                    Images=new List<DestinationImage>{}, //0
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Barcelona has a Mediterranean climate with hot summers (June to September) and mild winters (December to February). The average temperature ranges from 8°C (46°F) in winter to 30°C (86°F) in summer."
+                    }
                 },
                 //Spain -> Madrid
                 new Destination
@@ -1735,7 +1940,12 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationName="Madrid",
                     DestinationDescription="The capital city known for its historical landmarks, museums, and vibrant nightlife.",
                     Country=country[17],
-                    IsActive=true
+                    IsActive=true,
+                    Images=new List<DestinationImage>{}, //0
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Madrid has a hot-summer Mediterranean climate with temperatures ranging from 3°C (37°F) in winter to 32°C (90°F) in summer."
+                    }
                 },
                 //Spain -> Seville
                 new Destination
@@ -1743,7 +1953,12 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationName="Seville",
                     DestinationDescription="Famous for its Moorish architecture, flamenco dancing, and historical sites like the Alcazar.",
                     Country=country[17],
-                    IsActive=true
+                    IsActive=true,
+                    Images=new List<DestinationImage>{}, //0
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Seville has a hot-summer Mediterranean climate with temperatures ranging from 6°C (43°F) in winter to 35°C (95°F) in summer."
+                    }
                 },
                 //Italy -> Rome
                 new Destination
@@ -1751,7 +1966,12 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationName="Rome",
                     DestinationDescription="The capital city known for its ancient ruins, art, and the Vatican City.",
                     Country=country[18],
-                    IsActive=true
+                    IsActive=true,
+                    Images=new List<DestinationImage>{}, //0
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Rome has a Mediterranean climate with mild, wet winters (average temperature: 2-15°C / 36-59°F) and hot, dry summers (average temperature: 17-32°C / 63-90°F)."
+                    }
                 },
                 //Italy -> Venice
                 new Destination
@@ -1759,7 +1979,12 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationName="Venice",
                     DestinationDescription="Famous for its canals, historic architecture, and art, with attractions like St. Mark's Basilica.",
                     Country=country[18],
-                    IsActive=true
+                    IsActive=true,
+                    Images=new List<DestinationImage>{}, //0
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Venice has a humid subtropical climate with cool winters (average temperature: 0-7°C / 32-45°F) and hot, humid summers (average temperature: 14-26°C / 57-79°F)."
+                    }
                 },
                 //Italy -> Florence
                 new Destination
@@ -1767,7 +1992,12 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationName="Florence",
                     DestinationDescription="An art-centric city with masterpieces from the Renaissance, beautiful bridges, and palaces.",
                     Country=country[18],
-                    IsActive=true
+                    IsActive=true,
+                    Images=new List<DestinationImage>{}, //0
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Florence has a Mediterranean climate with hot summers (average temperature: 17-32°C / 63-90°F) and cool winters (average temperature: 3-15°C / 37-59°F)."
+                    }
                 },
                 //Switzerland -> Lucerne
                 new Destination
@@ -1775,7 +2005,12 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationName="Lucerne",
                     DestinationDescription="A picturesque city on the shores of Lake Lucerne, known for its medieval architecture and the Chapel Bridge.",
                     Country=country[19],
-                    IsActive=true
+                    IsActive=true,
+                    Images=new List<DestinationImage>{}, //0
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Lucerne has a temperate climate with mild temperatures. Winters (average temperature: -1 to 5°C / 30-41°F), summers (average temperature: 12-24°C / 54-75°F)."
+                    }
                 },
                 //Switzerland -> Zermatt
                 new Destination
@@ -1783,7 +2018,12 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationName="Zermatt",
                     DestinationDescription="A car-free village known for the Matterhorn, skiing, and hiking.",
                     Country=country[19],
-                    IsActive=true
+                    IsActive=true,
+                    Images=new List<DestinationImage>{}, //0
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Zermatt has an alpine climate with cold winters and cool summers. Winters (average temperature: -5 to -1°C / 23 to 30°F), summers (average temperature: 9-18°C / 48-64°F)."
+                    }
                 },
                 //Switzerland -> Interlaken
                 new Destination
@@ -1791,7 +2031,12 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationName="Interlaken",
                     DestinationDescription="Nestled between Lake Thun and Lake Brienz, surrounded by the Alps, known for adventurous activities and stunning landscapes.",
                     Country=country[19],
-                    IsActive=true
+                    IsActive=true,
+                    Images=new List<DestinationImage>{}, //0
+                    Climate=new Climate
+                    {
+                        ClimateInfo="Interlaken has a continental climate with cold winters (average temperature: -4 to 4°C / 25-39°F) and cool summers (average temperature: 12-25°C / 54-77°F)."
+                    }
                 },
             };
 
@@ -1800,357 +2045,9 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
 
             //};
 
-            var climates = new List<Climate>
-            {
-                //Cuba -> Havana
-                new Climate
-                {
-                    Destination=destinations[3],
-                    ClimateInfo="Punta Cana features a tropical wet and dry climate under the Köppen climate classification. The weather is fairly consistent all year, with an average temperature of 26 °C (79 °F). The hot and humid season lasts from May to October, and during the day temperatures might reach 35 °C (95 °F). From November to March, temperatures during the evening are around 20 °C (68 °F)."
-                },
-                //Cuba -> Varadero
-                new Climate
-                {
-                    Destination=destinations[2],
-                    ClimateInfo="Temperatures are pleasant through the whole year. Average temperatures range from 26°C (january) to 31°C (june). The rainiest months are: august, may and june. Best time to visit Trinidad is: january, february, march, april and december."
-                },
-                //Cuba -> Trinidad
-                new Climate
-                {
-                    Destination=destinations[1],
-                    ClimateInfo="The climate in Varadero is tropical, for it is at sea level at the tip of the island. Weather may change due to many factors such as exposure to hurricanes, windy tropical storms and by the cooling effect of the trade winds. It is surrounded by enormous bodies of water that can cool air flowing from North America. The yearly mean is 25˚ Celsius (77 ˚F). Summer mean is 27˚Celsius (80.6 ˚F), while winter mean is 21˚C (69.8 ˚F). Humidity is 81% and the average yearly rainfall is roughly 1,400 millimeters (55 inches). June 1 is the beginning of hurricane season; this normally ends on November 15."
-                },
-                //Dominican Republic -> Punta Cana
-                new Climate
-                {
-                    Destination=destinations[0],
-                    ClimateInfo="Havana has a tropical savanna climate (Aw) that closely borders on a tropical rainforest climate (Af) and a tropical monsoon climate (Am). Average temperatures range from 22 °C (72 °F) in January and February to 28 °C (82 °F) in August. Rainfall is heaviest in June and October and lightest from December through April."
-                },
-                //Egypt -> Cairo
-                new Climate
-                {
-                    Destination=destinations[4],
-                    ClimateInfo="In Cairo, the summers are long, hot, humid, arid, and clear and the winters are cool, dry, and mostly clear. Over the course of the year, the temperature typically varies from 10°C to 35°C and is rarely below 8°C or above 39°C. The best times of year to visit Cairo for hot-weather activities are from mid May to mid July and from mid August to late October."
-                },
-                //Dominican Republic -> Santo Domingo
-                new Climate
-                {
-                    Destination=destinations[5],
-                    ClimateInfo="Santo Domingo experiences a tropical climate with high temperatures year-round. The average annual temperature ranges from 72°F to 88°F (22°C to 31°C). The city sees a distinct wet season from May to October, with the possibility of hurricanes."
-                },
-                //Dominican Republic -> Saona Island
-                new Climate
-                {
-                    Destination=destinations[6],
-                    ClimateInfo="Saona Island shares the tropical climate of the Dominican Republic. Visitors can expect warm temperatures throughout the year, with an average annual temperature range of 77°F to 88°F (25°C to 31°C). The dry season is the ideal time to enjoy the pristine beaches and outdoor activities."
-                },
-                //Egypt -> Luxor
-                new Climate
-                {
-                    Destination=destinations[7],
-                    ClimateInfo="Luxor, located in the desert, has an arid climate. Summers are extremely hot, with temperatures exceeding 104°F (40°C), while winters are mild, ranging from 41°F to 73°F (5°C to 23°C). Rainfall is scarce."
-                },
-                //Egypt -> Sharm El Sheikh
-                new Climate
-                {
-                    Destination=destinations[8],
-                    ClimateInfo="Sharm El Sheikh has a desert climate characterized by high temperatures and low humidity. Summers are hot, with temperatures often exceeding 104°F (40°C), while winters are mild, ranging from 59°F to 77°F (15°C to 25°C). Rainfall is minimal. The Red Sea provides a cooling effect, making it a popular year-round destination for water activities."
-                },
-                //France -> Paris
-                new Climate
-                {
-                    Destination=destinations[9],
-                    ClimateInfo="The climate in Paris is oceanic, with warm summers and cool winters. Summers (July, around 25°C) are pleasant, and winters (January, around 5°C) are chilly."
-                },
-                //France -> Nice
-                new Climate
-                {
-                    Destination=destinations[10],
-                    ClimateInfo="Nice experiences a Mediterranean climate with hot, dry summers (July, around 30°C) and mild, wet winters (January, around 10°C)."
-                },
-                //France -> Avignon
-                new Climate
-                {
-                    Destination=destinations[11],
-                    ClimateInfo="Avignon also has a Mediterranean climate, characterized by hot summers (July, around 30°C) and mild winters (January, around 5°C)."
-                },
-                //Turkey -> Istanbul
-                new Climate
-                {
-                    Destination=destinations[12],
-                    ClimateInfo="Istanbul has a humid subtropical climate with hot summers (July, around 30°C) and cool, wet winters (January, around 5°C)."
-                },
-                //Turkey -> Cappadocia
-                new Climate
-                {
-                    Destination=destinations[13],
-                    ClimateInfo="Cappadocia has a continental climate with hot summers (July, around 30°C) and cold winters (January, around 0°C)."
-                },
-                //Turkey -> Antalya
-                new Climate
-                {
-                    Destination=destinations[14],
-                    ClimateInfo="Antalya experiences a Mediterranean climate with hot, dry summers (July, around 35°C) and mild, wet winters (January, around 10°C)."
-                },
-                //Brazil -> Rio De Janeiro
-                new Climate
-                {
-                    Destination=destinations[15],
-                    ClimateInfo="Rio has a tropical climate with hot, humid summers (January, around 30°C) and mild, dry winters (July, around 20°C)."
-                },
-                //Brazil -> Florianopolis
-                new Climate
-                {
-                    Destination=destinations[16],
-                    ClimateInfo="Subtropical climate, characterized by warm summers (26°C/79°F) and mild winters (18°C/64°F), occasionally accompanied by rainfall."
-                },
-                //Brazil -> Salvador
-                new Climate
-                {
-                    Destination=destinations[17],
-                    ClimateInfo="Salvador has a tropical climate with a wet season from April to July and a dry season from October to March. Temperatures average between 23 to 30°C (73 to 86°F) year-round."
-                },
-                //Greece -> Athens
-                new Climate
-                {
-                    Destination=destinations[18],
-                    ClimateInfo="Athens has a Mediterranean climate with hot, dry summers (July, around 33°C) and mild, wet winters (January, around 10°C)."
-                },
-                //Greece -> Santorini
-                new Climate
-                {
-                    Destination=destinations[19],
-                    ClimateInfo="Santorini also has a Mediterranean climate, with hot, dry summers (July, around 29°C) and mild, rainy winters (January, around 12°C)."
-                },
-                //Greece -> Crete
-                new Climate
-                {
-                    Destination=destinations[20],
-                    ClimateInfo="A captivating island with a Mediterranean climate. Hot, dry summers (June-September, 25-35°C) and mild, wet winters (December-February, 8-16°C). "
-                },
-                //Mexico -> Mexico City
-                new Climate
-                {
-                    Destination=destinations[21],
-                    ClimateInfo="Mexico City has a subtropical highland climate with mild, dry winters (January, around 15°C) and warmer, rainy summers (July, around 20°C)."
-                },
-                //Mexico -> Tulum
-                new Climate
-                {
-                    Destination=destinations[22],
-                    ClimateInfo="Tulum experiences a tropical climate with warm temperatures throughout the year. Summers are hot and humid, with temperatures around 28°C."
-                },
-                //Mexico -> Cancun
-                new Climate
-                {
-                    Destination=destinations[23],
-                    ClimateInfo="Cancun has a tropical climate with hot summers (July, around 32°C) and warm winters (January, around 23°C)."
-                },
-                //Russia -> Saint Petersburg
-                new Climate
-                {
-                    Destination=destinations[24],
-                    ClimateInfo="Saint Petersburg has a humid continental climate with cool summers (July, around 18°C) and cold winters (January, around -6°C)."
-                },
-                //Russia -> Moscow
-                new Climate
-                {
-                    Destination=destinations[25],
-                    ClimateInfo="Moscow also has a humid continental climate with warm summers (July, around 19°C) and cold winters (January, around -9°C)."
-                },
-                //Russia -> Lake Baikal
-                new Climate
-                {
-                    Destination=destinations[26],
-                    ClimateInfo="The climate around Lake Baikal is characterized by cold winters (January, around -19°C) and cool summers (July, around 12°C)."
-                },
-                //India -> New Delhi
-                new Climate
-                {
-                    Destination=destinations[27],
-                    ClimateInfo="New Delhi has a hot semi-arid climate with extremely hot summers (May, around 38°C) and cool winters (January, around 12°C)."
-                },
-                //India -> Agra
-                new Climate
-                {
-                    Destination=destinations[28],
-                    ClimateInfo="Agra experiences a hot semi-arid climate with scorching summers, where temperatures can soar above 40°C (104°F). Winters are cool and foggy, with temperatures ranging from 8°C to 14°C (46°F to 57°F)."
-                },
-                //India -> Varanasi
-                new Climate
-                {
-                    Destination=destinations[29],
-                    ClimateInfo="Varanasi has a humid subtropical climate with hot summers (May, around 38°C) and cool winters (January, around 12°C)."
-                },
-                //Peru -> Lima
-                new Climate
-                {
-                    Destination=destinations[30],
-                    ClimateInfo="Lima has a subtropical desert climate with warm temperatures throughout the year. Summers (February, around 27°C) are hot and dry."
-                },
-                //Peru -> Machu Picchu
-                new Climate
-                {
-                    Destination=destinations[31],
-                    ClimateInfo="The climate around Machu Picchu is tropical mountainous, with warm days (November, around 22°C) and cooler nights."
-                },
-                //Peru -> Cusco
-                new Climate
-                {
-                    Destination=destinations[32],
-                    ClimateInfo="Highland climate, dry season (April-October), clear skies, daytime temperatures 15-20°C (59-68°F); wet season (November-March), occasional showers, daytime temperatures 12-18°C (54-64°F)."
-                },
-                //South Korea -> Seoul
-                new Climate
-                {
-                    Destination=destinations[33],
-                    ClimateInfo="Seoul has a humid continental climate with hot, humid summers (August, around 27°C) and cold, dry winters (January, around -6°C)."
-                },
-                //South Korea -> Jeju Island
-                new Climate
-                {
-                    Destination=destinations[34],
-                    ClimateInfo="Jeju Island has a humid subtropical climate with warm temperatures throughout the year. Summers (August, around 29°C) are humid."
-                },
-                //South Korea -> Busan
-                new Climate
-                {
-                    Destination=destinations[35],
-                    ClimateInfo="Busan experiences a humid subtropical climate with hot, humid summers (August, around 28°C) and mild winters (January, around 3°C)."
-                },
-                //Morocco -> Marrakech
-                new Climate
-                {
-                    Destination=destinations[36],
-                    ClimateInfo="Marrakech has a hot semi-arid climate with extremely hot summers (July, around 38°C) and mild winters (January, around 12°C)."
-                },
-                //Morocco -> Fes
-                new Climate
-                {
-                    Destination=destinations[37],
-                    ClimateInfo="Fes experiences a Mediterranean climate with hot, dry summers (July, around 35°C) and mild, wet winters (January, around 10°C)."
-                },
-                //Morocco -> Casablanca
-                new Climate
-                {
-                    Destination=destinations[38],
-                    ClimateInfo="Casablanca enjoys a Mediterranean climate, with hot summers (20°C to 26°C / 68°F to 79°F) and mild winters (8°C to 17°C / 46°F to 63°F). Refreshing sea breezes contribute to a pleasant atmosphere year-round."
-                },
-                //Argentina -> Buenos Aires
-                new Climate
-                {
-                    Destination=destinations[39],
-                    ClimateInfo="Temperate climate with hot summers (December to February) and mild winters (June to August). Summer averages around 24-33°C (75-91°F), while winter averages around 7-18°C (45-64°F)."
-                },
-                //Argentina -> Mendoza
-                new Climate
-                {
-                    Destination=destinations[40],
-                    ClimateInfo="Mendoza features a desert climate with hot summers and cool winters. Summer temperatures can reach around 32°C (90°F), while winters see daytime temperatures ranging from 14°C to 19°C (57°F to 66°F), making it an ideal year-round destination."
-                },
-                //Argentina -> Iguazu Falls
-                new Climate
-                {
-                    Destination=destinations[41],
-                    ClimateInfo="Subtropical climate with high humidity. Rainfall is evenly distributed throughout the year. Around 18-32°C (64-90°F)."
-                },
-                //Tanzania -> Kilimanjaro
-                new Climate
-                {
-                    Destination=destinations[42],
-                    ClimateInfo="Varied due to different elevations. Lower slopes are tropical, middle zones are temperate, and the summit is icy and cold. Range from 20°C (68°F) at the base to sub-zero temperatures at the summit."
-                },
-                //Tanzania -> Zanzibar
-                new Climate
-                {
-                    Destination=destinations[43],
-                    ClimateInfo="Tropical with a hot season (December to March) and a cooler season (June to October). Around 26-32°C (79-90°F) year-round."
-                },
-                //Tanzania -> Serengeti National Park
-                new Climate
-                {
-                    Destination=destinations[44],
-                    ClimateInfo="Warm and dry (June to October, peak safari season) with a wet season (November to May). Average temperature is 20-30°C (68-86°F) during the day."
-                },
-                //Australia -> Sydney
-                new Climate
-                {
-                    Destination=destinations[45],
-                    ClimateInfo="Temperate climate with warm summers (December to February) and mild winters (June to August). Summer averages around 18-26°C (64-79°F), and winter averages around 8-16°C (46-61°F)."
-                },
-                //Australia -> Melbourne
-                new Climate
-                {
-                    Destination=destinations[46],
-                    ClimateInfo="Temperate climate with cool winters (June to August) and warm summers (December to February). Summer averages around 14-25°C (57-77°F), and winter averages around 6-14°C (43-57°F)."
-                },
-                //Australia -> Tasmania
-                new Climate
-                {
-                    Destination=destinations[47],
-                    ClimateInfo="Temperate maritime climate with cool summers and cold winters. Summer averages around 12-21°C (54-70°F), and winter averages around 3-11°C (37-52°F)."
-                },
-                //Antartica -> Antarctica
-                new Climate
-                {
-                    Destination=destinations[48],
-                    ClimateInfo="Extremely cold with average temperatures ranging from -10°C to -60°C (14°F to -76°F). Strong winds are prevalent, and precipitation is low, making Antarctica the driest continent."
-                },
-                //Spain -> Barcelona
-                new Climate
-                {
-                    Destination=destinations[49],
-                    ClimateInfo="Barcelona has a Mediterranean climate with hot summers (June to September) and mild winters (December to February). The average temperature ranges from 8°C (46°F) in winter to 30°C (86°F) in summer."
-                },
-                //Spain -> Madrid
-                new Climate
-                {
-                    Destination=destinations[50],
-                    ClimateInfo="Madrid has a hot-summer Mediterranean climate with temperatures ranging from 3°C (37°F) in winter to 32°C (90°F) in summer."
-                },
-                //Spain -> Seville
-                new Climate
-                {
-                    Destination=destinations[51],
-                    ClimateInfo="Seville has a hot-summer Mediterranean climate with temperatures ranging from 6°C (43°F) in winter to 35°C (95°F) in summer."
-                },
-                //Italy -> Rome
-                new Climate
-                {
-                    Destination=destinations[52],
-                    ClimateInfo="Rome has a Mediterranean climate with mild, wet winters (average temperature: 2-15°C / 36-59°F) and hot, dry summers (average temperature: 17-32°C / 63-90°F)."
-                },
-                //Italy -> Venice
-                new Climate
-                {
-                    Destination=destinations[53],
-                    ClimateInfo="Venice has a humid subtropical climate with cool winters (average temperature: 0-7°C / 32-45°F) and hot, humid summers (average temperature: 14-26°C / 57-79°F)."
-                },
-                //Italy -> Florence
-                new Climate
-                {
-                    Destination=destinations[54],
-                    ClimateInfo="Florence has a Mediterranean climate with hot summers (average temperature: 17-32°C / 63-90°F) and cool winters (average temperature: 3-15°C / 37-59°F)."
-                },
-                //Switzerland -> Lucerne
-                new Climate
-                {
-                    Destination=destinations[55],
-                    ClimateInfo="Lucerne has a temperate climate with mild temperatures. Winters (average temperature: -1 to 5°C / 30-41°F), summers (average temperature: 12-24°C / 54-75°F)."
-                },
-                //Switzerland -> Zermatt
-                new Climate
-                {
-                    Destination=destinations[56],
-                    ClimateInfo="Zermatt has an alpine climate with cold winters and cool summers. Winters (average temperature: -5 to -1°C / 23 to 30°F), summers (average temperature: 9-18°C / 48-64°F)."
-                },
-                //Switzerland -> Interlaken
-                new Climate
-                {
-                    Destination=destinations[57],
-                    ClimateInfo="Interlaken has a continental climate with cold winters (average temperature: -4 to 4°C / 25-39°F) and cool summers (average temperature: 12-25°C / 54-77°F)."
-                },
-            };
+            //var climates = new List<Climate>
+            //{
+            //};
 
             //var destinationImages = new List<DestinationImage>
             //{
