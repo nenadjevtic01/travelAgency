@@ -10,10 +10,13 @@ namespace DiplomskiProjekat.Domain
     {
         public int ReservationRoomId { get; set; }
         public int ReservationId { get; set; }
-        public int RoomId { get; set; }
+        public int AccommodationId { get; set; }
+        public int RoomTypePriceId { get; set; }
+        public int Quantity { get; set; }
         public bool? IsActive { get; set; }
 
-        public virtual Room Room { get; set; }
+        public virtual Accommodation Accommodation { get; set; }
+        public virtual RoomTypePrice RoomTypePrice { get; set; }
         public virtual Reservation Reservation { get; set; }
 
     }

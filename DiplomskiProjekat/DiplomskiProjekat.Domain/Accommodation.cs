@@ -20,6 +20,6 @@ namespace DiplomskiProjekat.Domain
         public virtual AccommodationType AccommodationType { get; set;}
         public virtual ICollection<TripAccommodation> Trips { get; set; } = new List<TripAccommodation>();
         public virtual ICollection<RoomNumber> RoomsNumber { get; set; } = new List<RoomNumber>();
-        public virtual ICollection<Room> Rooms { get; set; } = new List<Room>();
+        public virtual ICollection<RoomTypePrice> RoomTypePrice { get; set; } = new List<RoomTypePrice>();
     }
 }

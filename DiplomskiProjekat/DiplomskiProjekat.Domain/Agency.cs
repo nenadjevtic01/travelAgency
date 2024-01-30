@@ -11,6 +11,7 @@ namespace DiplomskiProjekat.Domain
         public int AgencyId { get; set; }
         public string AgencyName { get; set;}
         public string Address { get; set; }
+        public string City { get; set; }
         public string Phone { get; set; }
 
         public virtual ICollection<AgencyEmployee> Employees { get; set; } = new List<AgencyEmployee>();

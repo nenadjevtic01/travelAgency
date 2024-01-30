@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace DiplomskiProjekat.Implementation
 {
@@ -30,11 +31,13 @@ namespace DiplomskiProjekat.Implementation
         {
             try
             {
-                HandleLoggingAndAuthorization(request, data);
+                HandleAuthorization(request, data);
                 var sw = new Stopwatch();
                 sw.Start();
                 request.Execute(data);
                 sw.Stop();
+
+                HandleLogging(request, data);
 
                 Console.WriteLine("Command name: " + request.UseCaseName + ", Duration: " + sw.ElapsedMilliseconds + "ms");
             }
@@ -49,11 +52,12 @@ namespace DiplomskiProjekat.Implementation
         {
             try
             {
-                HandleLoggingAndAuthorization(query, data);
+                HandleAuthorization(query, data);
                 var sw = new Stopwatch();
                 sw.Start();
                 var response = query.Execute(data);
                 sw.Stop();
+                HandleLogging(query, data);
                 Console.WriteLine("Query name: " + query.UseCaseName + ", Duration: " + sw.ElapsedMilliseconds + "ms");
 
                 return response;
@@ -65,9 +69,30 @@ namespace DiplomskiProjekat.Implementation
             }
         }
 
-        private void HandleLoggingAndAuthorization<TRequest>(IUseCase useCase, TRequest data)
+        private void HandleAuthorization<TRequest>(IUseCase useCase, TRequest data)
         {
             var isAuthorized = _user.UseCaseIds.Contains(useCase.UseCaseId);
+
+            if (!isAuthorized)
+            {
+                var log = new UseCaseLogDto
+                {
+                    User = _user.Identity,
+                    ExecutionDateTime = DateTime.UtcNow,
+                    UseCaseName = useCase.UseCaseName,
+                    UserId = _user.Id,
+                    Data = JsonConvert.SerializeObject(data),
+                    IsAuthorized = false
+                };
+
+                _useCaseLogger.Log(log);
+
+                throw new ForbiddenUseCaseExecutionException(useCase.UseCaseName, _user.Identity);
+            }
+        }
+
+        private void HandleLogging<TRequest>(IUseCase useCase, TRequest data)
+        {
             var log = new UseCaseLogDto
             {
                 User = _user.Identity,
@@ -75,15 +100,10 @@ namespace DiplomskiProjekat.Implementation
                 UseCaseName = useCase.UseCaseName,
                 UserId = _user.Id,
                 Data = JsonConvert.SerializeObject(data),
-                IsAuthorized = isAuthorized
+                IsAuthorized = true
             };
 
             _useCaseLogger.Log(log);
-
-            if (!isAuthorized)
-            {
-                throw new ForbiddenUseCaseExecutionException(useCase.UseCaseName, _user.Identity);
-            }
         }
     }
 }

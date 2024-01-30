@@ -17,7 +17,7 @@ namespace DiplomskiProjekat.DataAccess.Configurations
             builder.Property(x => x.RoomTypeName).IsRequired().HasMaxLength(20);
 
             builder
-                .HasMany(x => x.AccommodationRooms)
+                .HasMany(x => x.RoomTypePrice)
                 .WithOne(x => x.RoomType)
                 .HasForeignKey(x => x.RoomTypeId)
                 .OnDelete(DeleteBehavior.Restrict);

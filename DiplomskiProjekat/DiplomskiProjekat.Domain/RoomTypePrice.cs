@@ -6,18 +6,16 @@ using System.Threading.Tasks;
 
 namespace DiplomskiProjekat.Domain
 {
-    public class Room
+    public class RoomTypePrice
     {
-        public int RoomId { get; set; }
+        public int RoomTypePriceId { get; set; }
         public int AccommodationId { get; set; }
         public int RoomTypeId { get; set; }
-        public bool AC { get; set; }
-        public bool Balcony { get; set; }
+        public decimal Price { get; set; }
+        public DateTime ValidFrom { get; set; }
 
         public virtual Accommodation Accommodation { get; set; }
         public virtual RoomType RoomType { get; set; }
-
-        public virtual ICollection<ReservationRoom> Reservations { get; set; } = new List<ReservationRoom>();
-        public virtual ICollection<RoomPrice> Prices { get; set; } = new List<RoomPrice>();
+        public virtual ICollection<ReservationRoom> RoomReservations { get; set; }=new List<ReservationRoom>();
     }
 }

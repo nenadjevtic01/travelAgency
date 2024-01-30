@@ -1,4 +1,5 @@
-﻿using DiplomskiProjekat.Application.UseCases.Commands;
+﻿using DiplomskiProjekat.Application.Constants;
+using DiplomskiProjekat.Application.UseCases.Commands;
 using DiplomskiProjekat.DataAccess;
 using DiplomskiProjekat.Domain;
 using System;
@@ -512,10 +513,6 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     }
                 },
             };
-
-            //var visas = new List<Visa>
-            //{  
-            //};
 
             var destinations = new List<Destination>
             {
@@ -1246,7 +1243,24 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationDescription="A cultural hub with the State Hermitage Museum, Winter Palace, and the grandeur of the Peter and Paul Fortress.",
                     Country=country[8],
                     IsActive=true,
-                    Images=new List<DestinationImage>{}, // 0
+                    Images=new List<DestinationImage>
+                    {
+                        new DestinationImage
+                        {
+                            Src="Russia/SaintPetersburg/SaintPetersburg01.jpg",
+                            Alt="Saint Petersburg image 1"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Russia/SaintPetersburg/SaintPetersburg02.jpg",
+                            Alt="Saint Petersburg image 2"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Russia/SaintPetersburg/SaintPetersburg03.jpg",
+                            Alt="Saint Petersburg image 3"
+                        },
+                    },
                     Climate=new Climate
                     {
                         ClimateInfo="Saint Petersburg has a humid continental climate with cool summers (July, around 18°C) and cold winters (January, around -6°C)."
@@ -1649,7 +1663,24 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationDescription="Casablanca, Morocco's largest city, seamlessly blends modernity with tradition. Explore the iconic Hassan II Mosque, wander through the bustling medina, and experience the vibrant cultural tapestry of this coastal metropolis.",
                     Country=country[12],
                     IsActive=true,
-                    Images=new List<DestinationImage>{}, //0
+                    Images=new List<DestinationImage>
+                    {
+                        new DestinationImage
+                        {
+                            Src="Morocco/Casablanca/Casablanca01.jpg",
+                            Alt="Casablanca image 1"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Morocco/Casablanca/Casablanca02.jpg",
+                            Alt="Casablanca image 2"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Morocco/Casablanca/Casablanca03.jpg",
+                            Alt="Casablanca image 3"
+                        },
+                    },
                     Climate=new Climate
                     {
                         ClimateInfo="Casablanca enjoys a Mediterranean climate, with hot summers (20°C to 26°C / 68°F to 79°F) and mild winters (8°C to 17°C / 46°F to 63°F). Refreshing sea breezes contribute to a pleasant atmosphere year-round."
@@ -1692,7 +1723,24 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationDescription="Mendoza, nestled in the foothills of the Andes, is Argentina's wine country par excellence. Famous for its Malbec wines, the region offers picturesque vineyards, stunning mountain landscapes, and outdoor activities.",
                     Country=country[13],
                     IsActive=true,
-                    Images=new List<DestinationImage>{}, //0
+                    Images=new List<DestinationImage>
+                    {
+                        new DestinationImage
+                        {
+                            Src="Argentina/Mendoza/Mendoza01.jpg",
+                            Alt="Mendoza image 1"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Argentina/Mendoza/Mendoza02.jpg",
+                            Alt="Mendoza image 2"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Argentina/Mendoza/Mendoza03.jpg",
+                            Alt="Mendoza image 3"
+                        },
+                    },
                     Climate=new Climate
                     {
                         ClimateInfo="Mendoza features a desert climate with hot summers and cool winters. Summer temperatures can reach around 32°C (90°F), while winters see daytime temperatures ranging from 14°C to 19°C (57°F to 66°F), making it an ideal year-round destination."
@@ -1928,7 +1976,24 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationDescription="A dynamic city with impressive architecture by Antoni Gaudí, beaches, and a rich cultural scene.",
                     Country=country[17],
                     IsActive=true,
-                    Images=new List<DestinationImage>{}, //0
+                    Images=new List<DestinationImage>
+                    {
+                        new DestinationImage
+                        {
+                            Src="Spain/Barcelona/Barcelona01.jpg",
+                            Alt="Barcelona image 1"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Spain/Barcelona/Barcelona02.jpg",
+                            Alt="Barcelona image 2"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Spain/Barcelona/Barcelona03.jpg",
+                            Alt="Barcelona image 3"
+                        },
+                    },
                     Climate=new Climate
                     {
                         ClimateInfo="Barcelona has a Mediterranean climate with hot summers (June to September) and mild winters (December to February). The average temperature ranges from 8°C (46°F) in winter to 30°C (86°F) in summer."
@@ -1941,7 +2006,24 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationDescription="The capital city known for its historical landmarks, museums, and vibrant nightlife.",
                     Country=country[17],
                     IsActive=true,
-                    Images=new List<DestinationImage>{}, //0
+                    Images=new List<DestinationImage>
+                    {
+                        new DestinationImage
+                        {
+                            Src="Spain/Madrid/Madrid01.jpg",
+                            Alt="Madrid image 1"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Spain/Madrid/Madrid02.jpg",
+                            Alt="Madrid image 2"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Spain/Madrid/Madrid03.jpg",
+                            Alt="Madrid image 3"
+                        },
+                    },
                     Climate=new Climate
                     {
                         ClimateInfo="Madrid has a hot-summer Mediterranean climate with temperatures ranging from 3°C (37°F) in winter to 32°C (90°F) in summer."
@@ -1954,7 +2036,24 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationDescription="Famous for its Moorish architecture, flamenco dancing, and historical sites like the Alcazar.",
                     Country=country[17],
                     IsActive=true,
-                    Images=new List<DestinationImage>{}, //0
+                    Images=new List<DestinationImage>
+                    {
+                        new DestinationImage
+                        {
+                            Src="Spain/Seville/Seville01.jpg",
+                            Alt="Seville image 1"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Spain/Seville/Seville02.jpg",
+                            Alt="Seville image 2"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Spain/Seville/Seville03.jpg",
+                            Alt="Seville image 3"
+                        },
+                    },
                     Climate=new Climate
                     {
                         ClimateInfo="Seville has a hot-summer Mediterranean climate with temperatures ranging from 6°C (43°F) in winter to 35°C (95°F) in summer."
@@ -1967,7 +2066,24 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationDescription="The capital city known for its ancient ruins, art, and the Vatican City.",
                     Country=country[18],
                     IsActive=true,
-                    Images=new List<DestinationImage>{}, //0
+                    Images=new List<DestinationImage>
+                    {
+                        new DestinationImage
+                        {
+                            Src="Italy/Rome/Rome01.jpg",
+                            Alt="Rome image 1"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Italy/Rome/Rome02.jpg",
+                            Alt="Rome image 2"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Italy/Rome/Rome03.jpg",
+                            Alt="Rome image 3"
+                        },
+                    },
                     Climate=new Climate
                     {
                         ClimateInfo="Rome has a Mediterranean climate with mild, wet winters (average temperature: 2-15°C / 36-59°F) and hot, dry summers (average temperature: 17-32°C / 63-90°F)."
@@ -1980,7 +2096,24 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationDescription="Famous for its canals, historic architecture, and art, with attractions like St. Mark's Basilica.",
                     Country=country[18],
                     IsActive=true,
-                    Images=new List<DestinationImage>{}, //0
+                    Images=new List<DestinationImage>
+                    {
+                        new DestinationImage
+                        {
+                            Src="Italy/Venice/Venice01.jpg",
+                            Alt="Venice image 1"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Italy/Venice/Venice02.jpg",
+                            Alt="Venice image 2"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Italy/Venice/Venice03.jpg",
+                            Alt="Venice image 3"
+                        },
+                    },
                     Climate=new Climate
                     {
                         ClimateInfo="Venice has a humid subtropical climate with cool winters (average temperature: 0-7°C / 32-45°F) and hot, humid summers (average temperature: 14-26°C / 57-79°F)."
@@ -1993,7 +2126,24 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationDescription="An art-centric city with masterpieces from the Renaissance, beautiful bridges, and palaces.",
                     Country=country[18],
                     IsActive=true,
-                    Images=new List<DestinationImage>{}, //0
+                    Images=new List<DestinationImage>
+                    {
+                        new DestinationImage
+                        {
+                            Src="Italy/Florence/Florence01.jpg",
+                            Alt="Florence image 1"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Italy/Florence/Florence02.jpg",
+                            Alt="Florence image 2"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Italy/Florence/Florence03.jpg",
+                            Alt="Florence image 3"
+                        },
+                    },
                     Climate=new Climate
                     {
                         ClimateInfo="Florence has a Mediterranean climate with hot summers (average temperature: 17-32°C / 63-90°F) and cool winters (average temperature: 3-15°C / 37-59°F)."
@@ -2006,7 +2156,24 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationDescription="A picturesque city on the shores of Lake Lucerne, known for its medieval architecture and the Chapel Bridge.",
                     Country=country[19],
                     IsActive=true,
-                    Images=new List<DestinationImage>{}, //0
+                    Images=new List<DestinationImage>
+                    {
+                        new DestinationImage
+                        {
+                            Src="Switzerland/Lucerne/Lucerne01.jpg",
+                            Alt="Lucerne image 1"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Switzerland/Lucerne/Lucerne02.jpg",
+                            Alt="Lucerne image 2"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Switzerland/Lucerne/Lucerne03.jpg",
+                            Alt="Lucerne image 3"
+                        },
+                    },
                     Climate=new Climate
                     {
                         ClimateInfo="Lucerne has a temperate climate with mild temperatures. Winters (average temperature: -1 to 5°C / 30-41°F), summers (average temperature: 12-24°C / 54-75°F)."
@@ -2019,7 +2186,24 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationDescription="A car-free village known for the Matterhorn, skiing, and hiking.",
                     Country=country[19],
                     IsActive=true,
-                    Images=new List<DestinationImage>{}, //0
+                    Images=new List<DestinationImage>
+                    {
+                        new DestinationImage
+                        {
+                            Src="Switzerland/Zermatt/Zermatt01.jpg",
+                            Alt="Zermatt image 1"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Switzerland/Zermatt/Zermatt02.jpg",
+                            Alt="Zermatt image 2"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Switzerland/Zermatt/Zermatt03.jpg",
+                            Alt="Zermatt image 3"
+                        },
+                    },
                     Climate=new Climate
                     {
                         ClimateInfo="Zermatt has an alpine climate with cold winters and cool summers. Winters (average temperature: -5 to -1°C / 23 to 30°F), summers (average temperature: 9-18°C / 48-64°F)."
@@ -2032,26 +2216,30 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     DestinationDescription="Nestled between Lake Thun and Lake Brienz, surrounded by the Alps, known for adventurous activities and stunning landscapes.",
                     Country=country[19],
                     IsActive=true,
-                    Images=new List<DestinationImage>{}, //0
+                    Images=new List<DestinationImage>
+                    {
+                        new DestinationImage
+                        {
+                            Src="Switzerland/Interlaken/Interlaken01.jpg",
+                            Alt="Interlaken image 1"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Switzerland/Interlaken/Interlaken02.jpg",
+                            Alt="Interlaken image 2"
+                        },
+                        new DestinationImage
+                        {
+                            Src="Switzerland/Interlaken/Interlaken03.jpg",
+                            Alt="Interlaken image 3"
+                        },
+                    },
                     Climate=new Climate
                     {
                         ClimateInfo="Interlaken has a continental climate with cold winters (average temperature: -4 to 4°C / 25-39°F) and cool summers (average temperature: 12-25°C / 54-77°F)."
                     }
                 },
             };
-
-            //var safety = new List<Safety>
-            //{
-
-            //};
-
-            //var climates = new List<Climate>
-            //{
-            //};
-
-            //var destinationImages = new List<DestinationImage>
-            //{
-            //};
 
             var accommodationType = new List<AccommodationType>
             {
@@ -2074,8 +2262,32 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                 new AccommodationType
                 {
                     AccommodationTypeName="Lodges"
-
-                }
+                },
+                //Expedition Base
+                new AccommodationType
+                {
+                    AccommodationTypeName="Expedition Base"
+                },
+                //Research Outpost
+                new AccommodationType
+                {
+                    AccommodationTypeName="Research Outpost"
+                },
+                //Explorer Camp
+                new AccommodationType
+                {
+                    AccommodationTypeName="Explorer Camp"
+                },
+                //Resort
+                new AccommodationType
+                {
+                    AccommodationTypeName="Resort"
+                },
+                //Inn
+                new AccommodationType
+                {
+                    AccommodationTypeName="Inn"
+                },
             };
 
             var roomTypes = new List<RoomType>
@@ -2133,15 +2345,42 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=10
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
                 {
-                    AccommodationName="Casa Colonial Oasis",
+                    AccommodationName="Casa Colonial Resort",
                     AccommodationStars=3,
                     Destination=destinations[0],
-                    AccommodationType=accommodationType[2],
-                    RoomsNumber =
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber =new List<RoomNumber>
                     {
                         new RoomNumber
                         {
@@ -2163,6 +2402,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=2
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -2170,7 +2436,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Havana Beach Resort",
                     AccommodationStars=5,
                     Destination=destinations[0],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -2192,6 +2458,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -2224,6 +2517,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=20
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -2253,6 +2573,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=5
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -2284,6 +2631,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=8
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 //Cuba -> Trinidad
@@ -2292,7 +2666,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Colonial Charm Inn",
                     AccommodationStars=4,
                     Destination=destinations[2],
-                    AccommodationType=accommodationType[3],
+                    AccommodationType=accommodationType[8],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -2314,6 +2688,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=10
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -2345,6 +2746,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=12
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -2375,6 +2803,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=6
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 //Dominican Republic -> Punta Cana
@@ -2383,7 +2838,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Caribbean Paradise Resort",
                     AccommodationStars=5,
                     Destination=destinations[3],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -2405,6 +2860,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=25
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -2436,6 +2918,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=10
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -2465,6 +2974,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -2497,6 +3033,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=20
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -2504,7 +3067,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Pyramid Grand Resort",
                     AccommodationStars=5,
                     Destination=destinations[4],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -2526,6 +3089,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -2556,6 +3146,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=12
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -2588,6 +3205,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=18
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -2595,7 +3239,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Colonial Elegance Inn",
                     AccommodationStars=3,
                     Destination=destinations[5],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[8],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -2618,6 +3262,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=8
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -2625,7 +3296,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Santo Domingo Beach Resort",
                     AccommodationStars=5,
                     Destination=destinations[5],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -2648,6 +3319,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=25
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 //Dominican Republic -> Saona Island
@@ -2656,7 +3354,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Tropical Breeze Resort",
                     AccommodationStars=4,
                     Destination=destinations[6],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -2678,6 +3376,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -2709,6 +3434,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=10
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -2738,6 +3490,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -2770,6 +3549,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=20
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -2777,7 +3583,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Nile Heritage Resort",
                     AccommodationStars=4,
                     Destination=destinations[7],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -2799,6 +3605,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=25
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -2830,6 +3663,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=12
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 //Egypt -> Sharm El Sheikh
@@ -2838,7 +3698,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Red Sea Paradise Resort",
                     AccommodationStars=5,
                     Destination=destinations[8],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -2860,6 +3720,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -2891,6 +3778,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=18
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -2920,6 +3834,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -2952,6 +3893,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=20
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -2959,7 +3927,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Montmartre Charm Inn",
                     AccommodationStars=3,
                     Destination=destinations[9],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[8],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -2981,6 +3949,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=10
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -3011,6 +4006,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=25
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -3043,6 +4065,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=25
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -3073,6 +4122,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=15
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -3080,7 +4156,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Azure Bay Resort",
                     AccommodationStars=5,
                     Destination=destinations[10],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -3102,6 +4178,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -3134,6 +4237,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=20
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -3141,7 +4271,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Pont Saint-Bénézet Inn",
                     AccommodationStars=3,
                     Destination=destinations[11],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[8],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -3163,6 +4293,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=10
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -3193,6 +4350,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=25
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -3225,6 +4409,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=30
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -3232,7 +4443,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Blue Mosque Grand Resort",
                     AccommodationStars=4,
                     Destination=destinations[12],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -3254,6 +4465,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -3284,6 +4522,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -3316,6 +4581,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=20
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -3346,6 +4638,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=10
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -3353,7 +4672,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Rocky Retreat Resort",
                     AccommodationStars=5,
                     Destination=destinations[13],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -3376,6 +4695,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=30
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 //Turkey -> Antalya
@@ -3384,7 +4730,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Turquoise Coast Resort",
                     AccommodationStars=5,
                     Destination=destinations[14],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -3406,6 +4752,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -3437,6 +4810,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=20
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -3444,7 +4844,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Düden Waterfalls Inn",
                     AccommodationStars=3,
                     Destination=destinations[14],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[8],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -3467,6 +4867,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=15
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 //Brazil -> Rio de Janeiro
@@ -3475,7 +4902,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Copacabana Beachfront Resort",
                     AccommodationStars=5,
                     Destination=destinations[15],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -3497,6 +4924,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -3528,6 +4982,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=20
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -3558,6 +5039,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=15
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 //Brazil -> Florianópolis
@@ -3566,7 +5074,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Magic Island Resort",
                     AccommodationStars=5,
                     Destination=destinations[16],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -3588,6 +5096,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -3619,6 +5154,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=20
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -3649,6 +5211,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=15
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 //Brazil -> Salvador
@@ -3657,7 +5246,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Vibrant Afro-Brazilian Resort",
                     AccommodationStars=5,
                     Destination=destinations[17],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -3679,6 +5268,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -3710,6 +5326,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=20
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -3739,6 +5382,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -3771,6 +5441,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=20
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -3778,7 +5475,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Parthenon Panorama Inn",
                     AccommodationStars=3,
                     Destination=destinations[18],
-                    AccommodationType=accommodationType[1],
+                    AccommodationType=accommodationType[8],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -3801,14 +5498,41 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=10
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
                 {
-                    AccommodationName="Ancient Agora Retreat",
+                    AccommodationName="Ancient Agora Resort",
                     AccommodationStars=5,
                     Destination=destinations[18],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -3830,6 +5554,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=25
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -3862,6 +5613,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=30
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -3869,7 +5647,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Sunset Bliss Resort",
                     AccommodationStars=3,
                     Destination=destinations[19],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -3892,6 +5670,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=20
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -3899,7 +5704,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Caldera Charm Homestay",
                     AccommodationStars=3,
                     Destination=destinations[19],
-                    AccommodationType=accommodationType[3],
+                    AccommodationType=accommodationType[2],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -3921,6 +5726,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -3953,6 +5785,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=30
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -3960,7 +5819,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Mountain Retreat Resort",
                     AccommodationStars=4,
                     Destination=destinations[20],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -3982,6 +5841,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -4012,6 +5898,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -4044,6 +5957,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=30
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -4051,7 +5991,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Teotihuacan Retreat Resort",
                     AccommodationStars=4,
                     Destination=destinations[21],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -4073,6 +6013,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -4103,6 +6070,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -4135,6 +6129,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=30
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -4142,7 +6163,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Mayan Ruins Resort",
                     AccommodationStars=4,
                     Destination=destinations[22],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -4164,6 +6185,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -4194,6 +6242,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -4226,6 +6301,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=30
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -4233,7 +6335,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Vibrant Nightlife Resort",
                     AccommodationStars=4,
                     Destination=destinations[23],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -4255,6 +6357,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -4285,6 +6414,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -4317,6 +6473,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=30
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -4324,7 +6507,7 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Winter Palace Resort",
                     AccommodationStars=4,
                     Destination=destinations[24],
-                    AccommodationType=accommodationType[0],
+                    AccommodationType=accommodationType[7],
                     RoomsNumber=new List<RoomNumber>
                     {
                         new RoomNumber
@@ -4346,6 +6529,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -4376,6 +6586,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                         {
                             RoomType=roomTypes[3],
                             NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
                         },
                     }
                 },
@@ -4408,6 +6645,33 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=30
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
@@ -4415,6 +6679,1554 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                     AccommodationName="Kremlin Grand Resort",
                     AccommodationStars=4,
                     Destination=destinations[25],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Moscow Lights Inn",
+                    AccommodationStars=3,
+                    Destination=destinations[25],
+                    AccommodationType=accommodationType[8],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Russia -> Lake Baikal
+                new Accommodation
+                {
+                    AccommodationName="Breathtaking Baikal Hotel",
+                    AccommodationStars=4,
+                    Destination=destinations[26],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=6
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=40
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Wilderness Retreat Lodges",
+                    AccommodationStars=3,
+                    Destination=destinations[26],
+                    AccommodationType=accommodationType[3],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=4
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=25
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=10
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Siberian Serenity Resort",
+                    AccommodationStars=5,
+                    Destination=destinations[26],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=50
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=25
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //India -> New Delhi
+                new Accommodation
+                {
+                    AccommodationName="Royal Red Fort Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[27],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=55
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="India Gate Grand Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[27],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Lotus Temple Resort",
+                    AccommodationStars=3,
+                    Destination=destinations[27],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //India -> Agra
+                new Accommodation
+                {
+                    AccommodationName="Taj Mahal View Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[28],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Mughal Marvel Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[28],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Agra Fort Grand Inn",
+                    AccommodationStars=3,
+                    Destination=destinations[28],
+                    AccommodationType=accommodationType[8],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //India -> Varanasi
+                new Accommodation
+                {
+                    AccommodationName="Ganges Serenity Hotel",
+                    AccommodationStars=4,
+                    Destination=destinations[29],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=6
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=40
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Spiritual Ghats Resort",
+                    AccommodationStars=3,
+                    Destination=destinations[29],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=4
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=25
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=10
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Riverfront Bliss Homestay",
+                    AccommodationStars=5,
+                    Destination=destinations[29],
+                    AccommodationType=accommodationType[2],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=50
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=25
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Peru -> Lima
+                new Accommodation
+                {
+                    AccommodationName="Colonial Elegance Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[30],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Andean Views Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[30],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Plaza de Armas Grand Inn",
+                    AccommodationStars=3,
+                    Destination=destinations[30],
+                    AccommodationType=accommodationType[8],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Peru -> Machu Picchu
+                new Accommodation
+                {
+                    AccommodationName="Mountain Majesty Hotel",
+                    AccommodationStars=4,
+                    Destination=destinations[31],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=6
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=40
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Incan Citadel Resort",
+                    AccommodationStars=3,
+                    Destination=destinations[31],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=4
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=25
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=10
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Andean Retreat Lodges",
+                    AccommodationStars=5,
+                    Destination=destinations[31],
+                    AccommodationType=accommodationType[3],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=50
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=25
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Peru -> Cusco
+                new Accommodation
+                {
+                    AccommodationName="Plaza de Armas Views Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[32],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=55
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Inca Heritage Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[32],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Cultural Gem Inn",
+                    AccommodationStars=3,
+                    Destination=destinations[32],
+                    AccommodationType=accommodationType[8],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //South Korea -> Seoul
+                new Accommodation
+                {
+                    AccommodationName="Skyline Splendor Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[33],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Palatial Palace Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[33],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Han River Homestay",
+                    AccommodationStars=3,
+                    Destination=destinations[33],
+                    AccommodationType=accommodationType[2],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //South Korea -> Jeju Island
+                new Accommodation
+                {
+                    AccommodationName="Volcanic Beauty Resort",
+                    AccommodationStars=5,
+                    Destination=destinations[34],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Waterfall Retreat Hotel",
+                    AccommodationStars=4,
+                    Destination=destinations[34],
                     AccommodationType=accommodationType[0],
                     RoomsNumber=new List<RoomNumber>
                     {
@@ -4438,13 +8250,40 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=20
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
                 new Accommodation
                 {
-                    AccommodationName="Moscow Lights Inn",
+                    AccommodationName="Hallasan Hideaway Lodges",
                     AccommodationStars=3,
-                    Destination=destinations[25],
+                    Destination=destinations[34],
                     AccommodationType=accommodationType[3],
                     RoomsNumber=new List<RoomNumber>
                     {
@@ -4468,37 +8307,4065 @@ namespace DiplomskiProjekat.Implementation.UseCases.Commands
                             RoomType=roomTypes[3],
                             NumberOf=15
                         },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
                     }
                 },
-                //Russia -> Lake Baikal
+                //South Korea -> Busan
                 new Accommodation
                 {
-                    AccommodationName="Breathtaking Baikal Hotel",
-                    AccommodationStars=4,
-                    Destination=destinations[26],
-                    AccommodationType=accommodationType[0]
-                },
-                new Accommodation
-                {
-                    AccommodationName="Wilderness Retreat Lodges",
-                    AccommodationStars=3,
-                    Destination=destinations[26],
-                    AccommodationType=accommodationType[3]
-                },
-                new Accommodation
-                {
-                    AccommodationName="Siberian Serenity Resort",
+                    AccommodationName="Coastal Charm Hotel",
                     AccommodationStars=5,
-                    Destination=destinations[26],
-                    AccommodationType=accommodationType[0]
+                    Destination=destinations[35],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=55
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Jagalchi Fish Market Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[35],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Gamcheon Culture Village Inn",
+                    AccommodationStars=3,
+                    Destination=destinations[35],
+                    AccommodationType=accommodationType[8],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Morocco -> Marrakech
+                new Accommodation
+                {
+                    AccommodationName="Souk Splendor Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[36],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Majorelle Magic Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[36],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Koutoubia Mosque Homestay",
+                    AccommodationStars=3,
+                    Destination=destinations[36],
+                    AccommodationType=accommodationType[2],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Morocco -> Fes
+                new Accommodation
+                {
+                    AccommodationName="Medina Marvel Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[37],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=55
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Bou Inania Bliss Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[37],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Tannery Views Inn",
+                    AccommodationStars=3,
+                    Destination=destinations[37],
+                    AccommodationType=accommodationType[8],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Morocco -> Casablanca
+                new Accommodation
+                {
+                    AccommodationName="Hassan II Mosque Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[38],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Medina Stroll Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[38],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Coastal Metropolis Homestay",
+                    AccommodationStars=3,
+                    Destination=destinations[38],
+                    AccommodationType=accommodationType[2],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Argentina -> Buenos Aires
+                new Accommodation
+                {
+                    AccommodationName="Tango Capital Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[39],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Artistic Melting Pot Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[39],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Eclectic Architecture Inn",
+                    AccommodationStars=3,
+                    Destination=destinations[39],
+                    AccommodationType=accommodationType[8],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Argentina -> Mendoza
+                new Accommodation
+                {
+                    AccommodationName="Andes Vineyard Views Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[40],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=55
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Mountain Retreat Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[40],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Wine Country Homestay",
+                    AccommodationStars=3,
+                    Destination=destinations[40],
+                    AccommodationType=accommodationType[2],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Argentina -> Iguazu Falls
+                new Accommodation
+                {
+                    AccommodationName="Breathtaking Falls Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[41],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Rainforest Retreat Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[41],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Natural Spectacle Inn",
+                    AccommodationStars=3,
+                    Destination=destinations[41],
+                    AccommodationType=accommodationType[8],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Tanzania -> Kilimanjaro
+                new Accommodation
+                {
+                    AccommodationName="Summit Serenity Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[42],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Glacial Gateway Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[42],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Savannah Views Lodges",
+                    AccommodationStars=3,
+                    Destination=destinations[42],
+                    AccommodationType=accommodationType[3],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Tanzania -> Zanzibar
+                new Accommodation
+                {
+                    AccommodationName="Spice Island Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[43],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=55
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Historic Stone Town Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[43],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Turquoise Tranquility Homestay",
+                    AccommodationStars=3,
+                    Destination=destinations[43],
+                    AccommodationType=accommodationType[2],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Tanzania -> Serengeti National Park
+                new Accommodation
+                {
+                    AccommodationName="Wildlife Wonderland Hotel",
+                    AccommodationStars=4,
+                    Destination=destinations[44],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=6
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=40
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Savanna Serenity Resort",
+                    AccommodationStars=3,
+                    Destination=destinations[44],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=4
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=25
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=10
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Eco Explorer Lodges",
+                    AccommodationStars=5,
+                    Destination=destinations[44],
+                    AccommodationType=accommodationType[3],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=50
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=25
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Australia -> Sydney
+                new Accommodation
+                {
+                    AccommodationName="Harbor Elegance Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[45],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Opera House Views Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[45],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Bondi Bliss Homestay",
+                    AccommodationStars=3,
+                    Destination=destinations[45],
+                    AccommodationType=accommodationType[2],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Australia -> Melbourne
+                new Accommodation
+                {
+                    AccommodationName="Cultural Hub Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[46],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=55
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Street Art Splendor Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[46],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Melbourne Magic Homestay",
+                    AccommodationStars=3,
+                    Destination=destinations[46],
+                    AccommodationType=accommodationType[2],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Australia -> Tasmania
+                new Accommodation
+                {
+                    AccommodationName="Wilderness Wonderland Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[47],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Cradle Mountain Retreat Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[47],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Coastal Tranquility Homestay",
+                    AccommodationStars=3,
+                    Destination=destinations[47],
+                    AccommodationType=accommodationType[2],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Antarctica -> Antarctica
+                new Accommodation
+                {
+                    AccommodationName="Frozen Expedition Base",
+                    AccommodationStars=3,
+                    Destination=destinations[48],
+                    AccommodationType=accommodationType[4],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Polar Research Outpost",
+                    AccommodationStars=2,
+                    Destination=destinations[48],
+                    AccommodationType=accommodationType[5],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=3
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=20
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=10
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Ice Explorer Camp",
+                    AccommodationStars=3,
+                    Destination=destinations[48],
+                    AccommodationType=accommodationType[6],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=4
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=6
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=25
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=12
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Spain -> Barcelona
+                new Accommodation
+                {
+                    AccommodationName="Sagrada Familia Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[49],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Gothic Quarter Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[49],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Catalan Charm Homestay",
+                    AccommodationStars=3,
+                    Destination=destinations[49],
+                    AccommodationType=accommodationType[2],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Spain -> Madrid
+                new Accommodation
+                {
+                    AccommodationName="Royal Retreat Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[50],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Prado Palace Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[50],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Madrid Magic Homestay",
+                    AccommodationStars=3,
+                    Destination=destinations[50],
+                    AccommodationType=accommodationType[2],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Spain -> Seville
+                new Accommodation
+                {
+                    AccommodationName="Alcazar Oasis Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[51],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Flamenco Views Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[51],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Andalusian Charm Homestay",
+                    AccommodationStars=3,
+                    Destination=destinations[51],
+                    AccommodationType=accommodationType[2],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Italy -> Rome
+                new Accommodation
+                {
+                    AccommodationName="Colosseum Grand Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[52],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Vatican Views Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[52],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Roman Retreat Homestay",
+                    AccommodationStars=3,
+                    Destination=destinations[52],
+                    AccommodationType=accommodationType[2],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Italy -> Venice
+                new Accommodation
+                {
+                    AccommodationName="Canal Elegance Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[53],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Venetian Serenity Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[53],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Gondola Charm Homestay",
+                    AccommodationStars=3,
+                    Destination=destinations[53],
+                    AccommodationType=accommodationType[2],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Italy -> Florence
+                new Accommodation
+                {
+                    AccommodationName="Renaissance Retreat Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[54],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Tuscan Tranquility Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[54],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Florentine Charm Homestay",
+                    AccommodationStars=3,
+                    Destination=destinations[54],
+                    AccommodationType=accommodationType[2],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Switzerland -> Lucerne
+                new Accommodation
+                {
+                    AccommodationName="Alpine Serenity Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[55],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Lakefront Luxury Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[55],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Swiss Chalet Homestay",
+                    AccommodationStars=3,
+                    Destination=destinations[55],
+                    AccommodationType=accommodationType[2],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Switzerland -> Zermatt
+                new Accommodation
+                {
+                    AccommodationName="Matterhorn Majesty Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[56],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Alpine Retreat Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[56],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Countryside Charm Homestay",
+                    AccommodationStars=3,
+                    Destination=destinations[56],
+                    AccommodationType=accommodationType[2],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                //Switzerland -> Interlaken
+                new Accommodation
+                {
+                    AccommodationName="Mountain Oasis Hotel",
+                    AccommodationStars=5,
+                    Destination=destinations[57],
+                    AccommodationType=accommodationType[0],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=12
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=15
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=60
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=30
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Lakeside Serenity Resort",
+                    AccommodationStars=4,
+                    Destination=destinations[57],
+                    AccommodationType=accommodationType[7],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=10
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=45
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=20
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
+                },
+                new Accommodation
+                {
+                    AccommodationName="Swiss Meadows Homestay",
+                    AccommodationStars=3,
+                    Destination=destinations[57],
+                    AccommodationType=accommodationType[2],
+                    RoomsNumber=new List<RoomNumber>
+                    {
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[0],
+                            NumberOf=5
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[1],
+                            NumberOf=8
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[2],
+                            NumberOf=30
+                        },
+                        new RoomNumber
+                        {
+                            RoomType=roomTypes[3],
+                            NumberOf=15
+                        },
+                    },
+                    RoomTypePrice=new List<RoomTypePrice>
+                    {
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[0],
+                            Price=GeneratePrice(150, 250),
+                            ValidFrom=DateTime.Parse("2024-01-01 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[1],
+                            Price=GeneratePrice(250, 500),
+                            ValidFrom=DateTime.Parse("2024-01-02 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[2],
+                            Price=GeneratePrice(500, 750),
+                            ValidFrom=DateTime.Parse("2024-01-03 12:00:00")
+                        },
+                        new RoomTypePrice
+                        {
+                            RoomType=roomTypes[3],
+                            Price=GeneratePrice(750, 1000),
+                            ValidFrom=DateTime.Parse("2024-01-04 12:00:00")
+                        },
+                    }
                 },
             };
 
+            var users = new List<User>
+            {
+                new Admin
+                {
+                    FirstName="Admin",
+                    LastName="Adminovic",
+                    Email="admin@mail.com",
+                    Password="$2a$11$Ahl8NDzdxDryw1hhJdck/OSJk8W6fZtCiiZbpDt2nRjyDdmHTJLyW", //Sifra123
+                    Address="Address 123",
+                    Phone="0601234567",
+                    City="Belgrade",
+                    Discriminator="Admin",
+                    UseCases=UserUseCaseConstants.AdminUseCaseIds.Select(useCaseId => new UserUseCase
+                    {
+                        UseCaseId=useCaseId
+                    }).ToList()
+                },
+                new RegularUser
+                {
+                    FirstName="User",
+                    LastName="Useric",
+                    Email="user@mail.com",
+                    Password="$2a$11$Ahl8NDzdxDryw1hhJdck/OSJk8W6fZtCiiZbpDt2nRjyDdmHTJLyW", //Sifra123
+                    Address="Second address 12",
+                    Phone="0612345678",
+                    City="Belgrade",
+                    Discriminator="Regular user",
+                    UseCases=UserUseCaseConstants.RegularUserUseCaseIds.Select(useCaseId => new UserUseCase
+                    {
+                        UseCaseId=useCaseId
+                    }).ToList()
+                }
+            };
+
+            var agencies = new List<Agency>
+            {
+                new Agency
+                {
+                    AgencyName="Example Travel",
+                    Address="Example address 12",
+                    Phone="0546372843",
+                    City="Belgrade",
+                    Employees=new List<AgencyEmployee>
+                    {
+                        new AgencyEmployee
+                        {
+                            FirstName="Employee",
+                            LastName="Employeevic",
+                            Email="employee@mail.com",
+                            Password="$2a$11$Ahl8NDzdxDryw1hhJdck/OSJk8W6fZtCiiZbpDt2nRjyDdmHTJLyW", //Sifra123
+                            Address="Third address 22",
+                            Phone="0645678901",
+                            City="Belgrade",
+                            Discriminator="Agency employee",
+                            UseCases=UserUseCaseConstants.AgencyEmployeeUseCaseIds.Select(useCaseId => new UserUseCase
+                            {
+                                UseCaseId=useCaseId
+                            }).ToList()
+                        }
+                    }
+                }
+            };
 
 
-            //var accommodationRoomsCount = new List<RoomNumber>
-            //{
-            //};
+        }
+
+        private decimal GeneratePrice(decimal minPrice, decimal maxPrice)
+        {
+            Random random = new Random();
+            decimal randomDouble = Convert.ToDecimal(random.NextDouble());
+            decimal price= Math.Floor(randomDouble * (250 - 200) + 200) + 0.99m;
+            return price;
         }
     }
 }

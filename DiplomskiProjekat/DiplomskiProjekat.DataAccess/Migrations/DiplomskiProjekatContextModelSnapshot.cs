@@ -90,6 +90,10 @@ namespace DiplomskiProjekat.DataAccess.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Phone")
                         .IsRequired()
                         .HasMaxLength(15)
@@ -474,6 +478,9 @@ namespace DiplomskiProjekat.DataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReservationRoomId"), 1L, 1);
 
+                    b.Property<int>("AccommodationId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedAt")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
@@ -485,10 +492,13 @@ namespace DiplomskiProjekat.DataAccess.Migrations
                         .HasColumnType("bit")
                         .HasDefaultValue(true);
 
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
                     b.Property<int>("ReservationId")
                         .HasColumnType("int");
 
-                    b.Property<int>("RoomId")
+                    b.Property<int>("RoomTypePriceId")
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -496,44 +506,13 @@ namespace DiplomskiProjekat.DataAccess.Migrations
 
                     b.HasKey("ReservationRoomId");
 
-                    b.HasIndex("ReservationId");
-
-                    b.HasIndex("RoomId");
-
-                    b.ToTable("ReservationRoom");
-                });
-
-            modelBuilder.Entity("DiplomskiProjekat.Domain.Room", b =>
-                {
-                    b.Property<int>("RoomId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RoomId"), 1L, 1);
-
-                    b.Property<bool>("AC")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false);
-
-                    b.Property<int>("AccommodationId")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("Balcony")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false);
-
-                    b.Property<int>("RoomTypeId")
-                        .HasColumnType("int");
-
-                    b.HasKey("RoomId");
-
                     b.HasIndex("AccommodationId");
 
-                    b.HasIndex("RoomTypeId");
+                    b.HasIndex("ReservationId");
 
-                    b.ToTable("Room");
+                    b.HasIndex("RoomTypePriceId");
+
+                    b.ToTable("ReservationRoom");
                 });
 
             modelBuilder.Entity("DiplomskiProjekat.Domain.RoomNumber", b =>
@@ -563,33 +542,6 @@ namespace DiplomskiProjekat.DataAccess.Migrations
                     b.ToTable("RoomNumber");
                 });
 
-            modelBuilder.Entity("DiplomskiProjekat.Domain.RoomPrice", b =>
-                {
-                    b.Property<int>("RoomPriceId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RoomPriceId"), 1L, 1);
-
-                    b.Property<decimal>("Price")
-                        .HasPrecision(6, 2)
-                        .HasColumnType("decimal(6,2)");
-
-                    b.Property<int>("RoomId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("ValidFrom")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("GETDATE()");
-
-                    b.HasKey("RoomPriceId");
-
-                    b.HasIndex("RoomId");
-
-                    b.ToTable("RoomPrice");
-                });
-
             modelBuilder.Entity("DiplomskiProjekat.Domain.RoomType", b =>
                 {
                     b.Property<int>("RoomTypeId")
@@ -606,6 +558,37 @@ namespace DiplomskiProjekat.DataAccess.Migrations
                     b.HasKey("RoomTypeId");
 
                     b.ToTable("RoomType");
+                });
+
+            modelBuilder.Entity("DiplomskiProjekat.Domain.RoomTypePrice", b =>
+                {
+                    b.Property<int>("RoomTypePriceId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RoomTypePriceId"), 1L, 1);
+
+                    b.Property<int>("AccommodationId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("RoomTypeId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("ValidFrom")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
+
+                    b.HasKey("RoomTypePriceId");
+
+                    b.HasIndex("AccommodationId");
+
+                    b.HasIndex("RoomTypeId");
+
+                    b.ToTable("RoomTypePrice");
                 });
 
             modelBuilder.Entity("DiplomskiProjekat.Domain.Safety", b =>
@@ -780,29 +763,6 @@ namespace DiplomskiProjekat.DataAccess.Migrations
                     b.ToTable("TripPrice");
                 });
 
-            modelBuilder.Entity("DiplomskiProjekat.Domain.UseCase", b =>
-                {
-                    b.Property<int>("UseCaseId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UseCaseId"), 1L, 1);
-
-                    b.Property<string>("UseCaseDescription")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("UseCaseName")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
-
-                    b.HasKey("UseCaseId");
-
-                    b.ToTable("UseCase");
-                });
-
             modelBuilder.Entity("DiplomskiProjekat.Domain.User", b =>
                 {
                     b.Property<int>("UserId")
@@ -893,8 +853,6 @@ namespace DiplomskiProjekat.DataAccess.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("UserId", "UseCaseId");
-
-                    b.HasIndex("UseCaseId");
 
                     b.ToTable("UserUseCase");
                 });
@@ -1088,40 +1046,29 @@ namespace DiplomskiProjekat.DataAccess.Migrations
 
             modelBuilder.Entity("DiplomskiProjekat.Domain.ReservationRoom", b =>
                 {
+                    b.HasOne("DiplomskiProjekat.Domain.Accommodation", "Accommodation")
+                        .WithMany()
+                        .HasForeignKey("AccommodationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("DiplomskiProjekat.Domain.Reservation", "Reservation")
                         .WithMany("Rooms")
                         .HasForeignKey("ReservationId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("DiplomskiProjekat.Domain.Room", "Room")
-                        .WithMany("Reservations")
-                        .HasForeignKey("RoomId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Reservation");
-
-                    b.Navigation("Room");
-                });
-
-            modelBuilder.Entity("DiplomskiProjekat.Domain.Room", b =>
-                {
-                    b.HasOne("DiplomskiProjekat.Domain.Accommodation", "Accommodation")
-                        .WithMany("Rooms")
-                        .HasForeignKey("AccommodationId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("DiplomskiProjekat.Domain.RoomType", "RoomType")
-                        .WithMany("AccommodationRooms")
-                        .HasForeignKey("RoomTypeId")
+                    b.HasOne("DiplomskiProjekat.Domain.RoomTypePrice", "RoomTypePrice")
+                        .WithMany("RoomReservations")
+                        .HasForeignKey("RoomTypePriceId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Accommodation");
 
-                    b.Navigation("RoomType");
+                    b.Navigation("Reservation");
+
+                    b.Navigation("RoomTypePrice");
                 });
 
             modelBuilder.Entity("DiplomskiProjekat.Domain.RoomNumber", b =>
@@ -1143,15 +1090,23 @@ namespace DiplomskiProjekat.DataAccess.Migrations
                     b.Navigation("RoomType");
                 });
 
-            modelBuilder.Entity("DiplomskiProjekat.Domain.RoomPrice", b =>
+            modelBuilder.Entity("DiplomskiProjekat.Domain.RoomTypePrice", b =>
                 {
-                    b.HasOne("DiplomskiProjekat.Domain.Room", "Room")
-                        .WithMany("Prices")
-                        .HasForeignKey("RoomId")
+                    b.HasOne("DiplomskiProjekat.Domain.Accommodation", "Accommodation")
+                        .WithMany("RoomTypePrice")
+                        .HasForeignKey("AccommodationId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("Room");
+                    b.HasOne("DiplomskiProjekat.Domain.RoomType", "RoomType")
+                        .WithMany("RoomTypePrice")
+                        .HasForeignKey("RoomTypeId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Accommodation");
+
+                    b.Navigation("RoomType");
                 });
 
             modelBuilder.Entity("DiplomskiProjekat.Domain.Safety", b =>
@@ -1270,19 +1225,11 @@ namespace DiplomskiProjekat.DataAccess.Migrations
 
             modelBuilder.Entity("DiplomskiProjekat.Domain.UserUseCase", b =>
                 {
-                    b.HasOne("DiplomskiProjekat.Domain.UseCase", "UseCase")
-                        .WithMany("Users")
-                        .HasForeignKey("UseCaseId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.HasOne("DiplomskiProjekat.Domain.User", "User")
                         .WithMany("UseCases")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
-
-                    b.Navigation("UseCase");
 
                     b.Navigation("User");
                 });
@@ -1311,7 +1258,7 @@ namespace DiplomskiProjekat.DataAccess.Migrations
 
             modelBuilder.Entity("DiplomskiProjekat.Domain.Accommodation", b =>
                 {
-                    b.Navigation("Rooms");
+                    b.Navigation("RoomTypePrice");
 
                     b.Navigation("RoomsNumber");
 
@@ -1386,18 +1333,16 @@ namespace DiplomskiProjekat.DataAccess.Migrations
                     b.Navigation("Rooms");
                 });
 
-            modelBuilder.Entity("DiplomskiProjekat.Domain.Room", b =>
-                {
-                    b.Navigation("Prices");
-
-                    b.Navigation("Reservations");
-                });
-
             modelBuilder.Entity("DiplomskiProjekat.Domain.RoomType", b =>
                 {
-                    b.Navigation("AccommodationRooms");
-
                     b.Navigation("AccommodationRoomsNumber");
+
+                    b.Navigation("RoomTypePrice");
+                });
+
+            modelBuilder.Entity("DiplomskiProjekat.Domain.RoomTypePrice", b =>
+                {
+                    b.Navigation("RoomReservations");
                 });
 
             modelBuilder.Entity("DiplomskiProjekat.Domain.Transport", b =>
@@ -1414,11 +1359,6 @@ namespace DiplomskiProjekat.DataAccess.Migrations
                     b.Navigation("Prices");
 
                     b.Navigation("Reservations");
-                });
-
-            modelBuilder.Entity("DiplomskiProjekat.Domain.UseCase", b =>
-                {
-                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("DiplomskiProjekat.Domain.User", b =>

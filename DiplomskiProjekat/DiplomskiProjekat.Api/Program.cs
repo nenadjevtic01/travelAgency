@@ -23,6 +23,9 @@ builder.Services.AddValidators();
 builder.Services.AddTransient<IUseCaseLogger, UseCaseLogger>();
 builder.Services.AddTransient<IExceptionLogger,ConsoleLogger>();
 
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddCors();
+
 builder.Services.AddTransient<UseCaseHandler>();
 
 

@@ -16,7 +16,8 @@ namespace DiplomskiProjekat.DataAccess.Configurations
         {
             builder.Property(x => x.ReservationRoomId).UseIdentityColumn(1, 1);
             builder.Property(x => x.ReservationId).IsRequired();
-            builder.Property(x => x.RoomId).IsRequired();
+            builder.Property(x => x.RoomTypePriceId).IsRequired();
+            builder.Property(x => x.Quantity).IsRequired();
             builder.Property(x => x.IsActive).IsRequired().HasDefaultValue(true);
         }
     }

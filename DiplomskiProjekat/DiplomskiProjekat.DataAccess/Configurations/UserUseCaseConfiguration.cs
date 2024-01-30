@@ -14,6 +14,11 @@ namespace DiplomskiProjekat.DataAccess.Configurations
         public void Configure(EntityTypeBuilder<UserUseCase> builder)
         {
             builder.HasKey(x => new { x.UserId, x.UseCaseId });
+
+            builder.HasOne(x=>x.User)
+                .WithMany(x=>x.UseCases)
+                .HasForeignKey(x=>x.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

@@ -29,8 +29,9 @@ namespace DiplomskiProjekat.DataAccess.Configurations
                 .WithOne(x => x.Accommodation)
                 .HasForeignKey(x => x.AccommodationId)
                 .OnDelete(DeleteBehavior.Restrict);
+
             builder
-                .HasMany(x => x.Rooms)
+                .HasMany(x => x.RoomTypePrice)
                 .WithOne(x => x.Accommodation)
                 .HasForeignKey(x => x.AccommodationId)
                 .OnDelete(DeleteBehavior.Restrict);

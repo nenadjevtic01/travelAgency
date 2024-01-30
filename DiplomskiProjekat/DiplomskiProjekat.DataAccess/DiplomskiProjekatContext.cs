@@ -28,7 +28,7 @@ namespace DiplomskiProjekat.DataAccess
 
         public DbSet<AuditLog> AuditLog { get; set; }
         public DbSet<Accommodation> Accommodation { get; set; }
-        public DbSet<RoomPrice> RoomPrice { get; set; }
+        public DbSet<RoomTypePrice> RoomTypePrice { get; set; }
         public DbSet<AccommodationType> AccommodationsType { get; set; }
         public DbSet<Agency> Agency { get; set; }
         public DbSet<Attraction> Attraction { get; set; }
@@ -42,7 +42,6 @@ namespace DiplomskiProjekat.DataAccess
         public DbSet<ItineraryActivity> ItineraryActivity { get; set; }
         public DbSet<Reservation> Reservation { get; set; }
         public DbSet<ReservationRoom> ReservationRoom { get; set; }
-        public DbSet<Room> Room { get; set; }
         public DbSet<RoomNumber> RoomNumber { get; set; }
         public DbSet<RoomType> RoomType { get; set; }
         public DbSet<Safety> Safety { get; set; }
@@ -51,7 +50,6 @@ namespace DiplomskiProjekat.DataAccess
         public DbSet<TripAccommodation> TripAccommodation { get; set; }
         public DbSet<TripAttraction> TripAttraction { get; set; }
         public DbSet<TripPrice> TripPrice { get; set; }
-        public DbSet<UseCase> UseCase { get; set; }
         public DbSet<User> User { get; set; }
         public DbSet<UserFavorites> UserFavorite { get; set; }
         public DbSet<UserUseCase> UserUseCase { get; set; }

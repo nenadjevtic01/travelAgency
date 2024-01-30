@@ -12,7 +12,7 @@ namespace DiplomskiProjekat.Domain
         public string RoomTypeName { get; set; }
 
         public virtual ICollection<RoomNumber> AccommodationRoomsNumber { get; set;} = new List<RoomNumber>();
-        public virtual ICollection<Room> AccommodationRooms { get; set;} = new List<Room>();
+        public virtual ICollection<RoomTypePrice> RoomTypePrice { get; set;} = new List<RoomTypePrice>();
 
     }
 }
